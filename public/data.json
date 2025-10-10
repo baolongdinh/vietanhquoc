@@ -1,0 +1,308 @@
+{
+  "header": {
+    "logo": "/images/logo.jpg",
+    "menu": [
+      {
+        "label": "Trang chủ",
+        "link": "/"
+      },
+      {
+        "label": "Khóa học",
+        "link": "/courses"
+      },
+      {
+        "label": "Giáo viên",
+        "link": "/teachers"
+      },
+      {
+        "label": "Về chúng tôi",
+        "link": "/about"
+      },
+      {
+        "label": "Liên hệ",
+        "link": "#footer"
+      }
+    ],
+    "cta": {
+      "label": "Tư vấn miễn phí",
+      "link": "#"
+    }
+  },
+  "hero": {
+    "title": "NGOẠI NGỮ VIỆT ANH QUỐC",
+    "subtitle": "YOUNG LEADERS",
+    "description": "Chương trình Anh ngữ Thiếu niên giúp học viên bứt phá kỹ năng Anh ngữ học thuật, tự tin chinh phục các kỳ thi quốc tế và sẵn sàng cho các bậc học cao hơn.",
+    "bannerImage": "/images/banner.jpg",
+    "cta": {
+      "label": "Tìm hiểu ngay",
+      "link": "#courses"
+    }
+  },
+  "courses": [
+    {
+      "id": 1,
+      "level": "Pre-A1 - A1",
+      "name": "PYL 1 - 3",
+      "hours": 48,
+      "desc": "Lộ trình nền tảng giúp học sinh lớp 1-3 làm quen tiếng Anh, xây dựng vốn từ vựng và kỹ năng nghe nói cơ bản.",
+      "age_range": "4-6 tuổi",
+      "price": 3500000,
+      "features": [
+        "Phát triển vốn từ vựng cơ bản",
+        "Làm quen với ngữ pháp đơn giản",
+        "Rèn luyện phát âm chuẩn",
+        "Phát triển kỹ năng nghe hiểu"
+      ],
+      "image": "/images/course/course.webp"
+    },
+    {
+      "id": 2,
+      "level": "A1+ - A2+ (KET)",
+      "name": "YLC 1 - 6",
+      "hours": 48,
+      "desc": "Phát triển kỹ năng tiếng Anh học thuật, làm quen với chuẩn Cambridge KET. Tăng cường khả năng phản xạ và tư duy tiếng Anh.",
+      "age_range": "6-11 tuổi",
+      "price": 4200000,
+      "features": [
+        "Luyện thi chứng chỉ Cambridge KET",
+        "Phát triển 4 kỹ năng nghe-nói-đọc-viết",
+        "Tăng cường vốn từ vựng học thuật",
+        "Rèn luyện ngữ pháp và cấu trúc câu"
+      ],
+      "image": "/images/course/course.webp"
+    },
+    {
+      "id": 3,
+      "level": "A2+ - B1 (PET)",
+      "name": "YLC Advanced",
+      "hours": 60,
+      "desc": "Củng cố toàn diện ngữ pháp, kỹ năng nghe - nói - đọc - viết, chuẩn bị cho kỳ thi Cambridge PET.",
+      "age_range": "11-15 tuổi",
+      "price": 4800000,
+      "features": [
+        "Luyện thi chứng chỉ Cambridge PET",
+        "Phát triển kỹ năng giao tiếp nâng cao",
+        "Rèn luyện tư duy phản biện bằng tiếng Anh",
+        "Làm quen với các dạng bài thi quốc tế"
+      ],
+      "image": "/images/course/course.webp"
+    },
+    {
+      "id": 4,
+      "level": "B1 - B2 (FCE)",
+      "name": "IELTS Foundation",
+      "hours": 72,
+      "desc": "Khóa học chuẩn bị nền tảng vững chắc cho kỳ thi IELTS, phát triển kỹ năng học thuật và tư duy phản biện.",
+      "age_range": "15+ tuổi",
+      "price": 4500000,
+      "features": [
+        "Làm quen với format bài thi IELTS",
+        "Phát triển vốn từ vựng học thuật",
+        "Rèn luyện kỹ năng viết essay",
+        "Luyện phát âm và speaking theo tiêu chuẩn quốc tế"
+      ],
+      "image": "/images/course/course.webp"
+    },
+    {
+      "id": 5,
+      "level": "B2 - C1",
+      "name": "IELTS Advanced",
+      "hours": 90,
+      "desc": "Khóa học chuyên sâu giúp học viên đạt điểm IELTS 6.5+, tập trung vào các kỹ năng cao cấp và chiến lược làm bài thi.",
+      "age_range": "Người đi làm",
+      "price": 5000000,
+      "features": [
+        "Chiến lược làm bài thi đạt điểm cao",
+        "Kỹ thuật viết essay band 7.0+",
+        "Phương pháp trả lời phỏng vấn speaking",
+        "Luyện đề thi thực tế với giáo viên chấm điểm chuẩn"
+      ],
+      "image": "/images/course/course.webp"
+    }
+  ],
+  "about": {
+    "title": "Môi trường học chuẩn quốc tế",
+    "desc": "Chương trình Young Leaders được thiết kế phù hợp với lứa tuổi thiếu niên, kết hợp phương pháp giảng dạy hiện đại cùng đội ngũ giáo viên giàu kinh nghiệm. Mỗi buổi học là một hành trình khám phá ngôn ngữ tự nhiên, giúp các em phát triển tư duy, sự tự tin và kỹ năng giao tiếp thực tế.",
+    "image": "/images/about/school.jpg",
+    "highlights": [
+      "Giáo trình chuẩn quốc tế từ National Geographic Learning",
+      "Giáo viên nước ngoài & Việt Nam giàu kinh nghiệm",
+      "Ứng dụng công nghệ học tập độc quyền V-HUB",
+      "Lộ trình rõ ràng theo chuẩn CEFR"
+    ]
+  },
+  "aboutPage": {
+    "educationSystem": {
+      "title": "HỆ THỐNG GIÁO DỤC CHẤT LƯỢNG HÀNG ĐẦU TẠI VIỆT NAM",
+      "image": "/images/about.jpg",
+      "content": "Việt Anh Quốc hướng tới tầm nhìn trở thành \"Hệ thống giáo dục chất lượng chuẩn quốc tế hàng đầu tại Việt Nam\". Chúng tôi tự hào với:",
+      "features": [
+        "Đội ngũ giáo viên nước ngoài chuyên nghiệp, sở hữu giọng chuẩn Anh - Anh, Anh - Mỹ cùng kinh nghiệm giảng dạy tiếng Anh dày dặn.",
+        "Liên kết chặt chẽ với các tổ chức giáo dục uy tín toàn cầu, mở ra cầu nối đến với cơ hội học tập vượt trội.",
+        "Hệ thống gồm 68 trung tâm tiếng Anh được đặt tại những vị trí thuận tiện, dễ di chuyển.",
+        "Chi phí học tập hợp lý với nhiều học bổng hấp dẫn, cùng các chương trình hỗ trợ học phí linh hoạt."
+      ],
+      "ctaText": "Hãy khám phá, làm chủ 4 kỹ năng tiếng Anh với sự đồng hành sát cánh từ VAQ!"
+    },
+    "visionMission": {
+      "values": [
+        {
+          "title": "TẦM NHÌN",
+          "icon": "fas fa-eye value-icon",
+          "content": "Với mục tiêu trở thành hệ thống giáo dục chuẩn quốc tế hàng đầu tại Việt Nam, Việt Anh Quốc mong muốn trang bị cho thế hệ trẻ những giá trị toàn cầu để sẵn sàng kết nối và hội nhập với thế giới."
+        },
+        {
+          "title": "SỨ MỆNH",
+          "icon": "fas fa-bullseye value-icon",
+          "content": "Việt Anh Quốc tiếp sức cho các thế hệ trẻ Việt Nam tự tin kết nối với thế giới và tạo dựng tương lai có ý nghĩa bằng cách trang bị kiến thức và tư duy toàn cầu, kỹ năng vượt trội cùng nền tảng ngôn ngữ vững chắc và giá trị sống phong phú."
+        },
+        {
+          "title": "GIÁ TRỊ CỐT LÕI",
+          "icon": "fas fa-star value-icon",
+          "values": [
+            "Giữ vững uy tín chất lượng đào tạo và dịch vụ.",
+            "Thấu hiểu và hành động với sự quan tâm chân thành.",
+            "Hợp tác và phát triển không ngừng vì một tương lai tốt đẹp hơn cho mọi người."
+          ]
+        }
+      ]
+    },
+    "students": {
+      "title": "HỌC VIÊN XUẤT SẮC",
+      "studentsList": [
+        {
+          "name": "Nguyễn Đăng Nhã Trúc",
+          "image": "/images/student/student.jpg",
+          "achievement": "Starters 15 Khiên"
+        },
+        {
+          "name": "Phạm Việt Thục Đoan",
+          "image": "/images/student/student.jpg",
+          "achievement": "IELTS 8.5"
+        },
+        {
+          "name": "Đoàn Bá Khánh Nguyên",
+          "image": "/images/student/student.jpg",
+          "achievement": "IELTS 8.5"
+        },
+        {
+          "name": "Đoàn Bá Khánh Giang",
+          "image": "/images/student/student.jpg",
+          "achievement": "IELTS 8.5"
+        }
+      ]
+    },
+    "testimonials": {
+      "title": "PHẢN HỒI TỪ PHỤ HUYNH",
+      "testimonialsList": [
+        {
+          "name": "Bé Nguyễn Minh Khôi",
+          "image": "/images/parent/parent.jpg",
+          "experience": "+5 năm đồng hành",
+          "content": "Con tôi đã có sự tiến bộ vượt bậc về khả năng giao tiếp tiếng Anh sau 2 khóa học tại trung tâm."
+        },
+        {
+          "name": "Bé Trần Minh Anh",
+          "image": "/images/parent/parent.jpg",
+          "experience": "+3 năm đồng hành",
+          "content": "Phương pháp giảng dạy tại trung tâm rất phù hợp với con tôi, giúp con hứng thú học tiếng Anh hơn."
+        },
+        {
+          "name": "Bé Nguyễn Tất Minh Phương",
+          "image": "/images/parent/parent.jpg",
+          "experience": "+12 năm đồng hành",
+          "content": "Gia đình rất yên tâm vì bé được tương tác nhiều với giáo viên và bạn bè qua các hoạt động vừa học vừa chơi."
+        },
+        {
+          "name": "Bé Nguyễn Tất Minh Khánh",
+          "image": "/images/parent/parent.jpg",
+          "experience": "+12 năm đồng hành",
+          "content": "Gia đình rất yên tâm vì bé được tương tác nhiều với giáo viên và bạn bè qua các hoạt động vừa học vừa chơi."
+        }
+      ]
+    }
+  },
+  "teachers": [
+    {
+      "name": "Thầy LÊ ANH TUẤN",
+      "image": "/images/teacher/teacher1.jpg",
+      "experience": 5,
+      "type": "vietnamese",
+      "qualification": "TESOL, IELTS 8.0",
+      "description": "Thầy Tuấn có hơn 5 năm kinh nghiệm giảng dạy tiếng Anh cho học sinh các lứa tuổi. Thầy tốt nghiệp Đại học Sư phạm TP.HCM và sở hữu chứng chỉ TESOL quốc tế."
+    },
+    {
+      "name": "Cô PHẠM THỊ HỒNG NHUNG",
+      "image": "/images/teacher/teacher2.jpg",
+      "experience": 4,
+      "type": "vietnamese",
+      "qualification": "CELTA, IELTS 8.5",
+      "description": "Cô Nhung chuyên dạy kỹ năng Speaking và Writing cho học sinh chuẩn bị thi IELTS. Với phương pháp giảng dạy sinh động, cô đã giúp nhiều học viên đạt điểm cao trong các kỳ thi quốc tế."
+    },
+    {
+      "name": "Thầy CALLUM BALFOUR",
+      "image": "/images/teacher/teacher3.jpg",
+      "experience": 6,
+      "type": "foreign",
+      "qualification": "CELTA, BA in English",
+      "description": "Thầy Callum đến từ Anh Quốc với hơn 6 năm kinh nghiệm giảng dạy. Thầy tốt nghiệp Đại học Oxford và đặc biệt giỏi trong việc tạo môi trường học tập tự nhiên cho học viên."
+    },
+    {
+      "name": "Cô ANNE KENTHILL",
+      "image": "/images/teacher/teacher4.jpg",
+      "experience": 9,
+      "type": "foreign",
+      "qualification": "TESOL, MA in Education",
+      "description": "Cô Anne có bằng Thạc sĩ Giáo dục từ Đại học Melbourne, Úc. Với 9 năm kinh nghiệm, cô đã phát triển phương pháp giảng dạy độc đáo giúp học viên tiến bộ nhanh chóng."
+    },
+    {
+      "name": "Thầy NGUYỄN MINH HIẾU",
+      "image": "/images/teacher/teacher1.jpg",
+      "experience": 7,
+      "type": "vietnamese",
+      "qualification": "TEFL, IELTS 8.0",
+      "description": "Thầy Hiếu chuyên dạy ngữ pháp và kỹ năng đọc hiểu. Thầy tốt nghiệp Đại học Ngoại ngữ Hà Nội và có nhiều năm kinh nghiệm luyện thi Cambridge."
+    },
+    {
+      "name": "Cô EMILIE SLATER",
+      "image": "/images/teacher/teacher2.jpg",
+      "experience": 5,
+      "type": "foreign",
+      "qualification": "CELTA, BA in Linguistics",
+      "description": "Cô Emilie đến từ Mỹ, tốt nghiệp ngành Ngôn ngữ học tại Đại học California. Cô có phương pháp giảng dạy hiện đại, tập trung vào phát triển kỹ năng giao tiếp thực tế."
+    }
+  ],
+  "footer": {
+    "address": "E2-12, ĐƯỜNG C, KDC HIM LAM PHÚ ĐÔNG, PHƯỜNG AN BÌNH, TP. DĨ AN, TỈNH BÌNH DƯƠNG",
+    "phone": "091 993 28 55",
+    "email": "Vietanhquoc@gmail.com",
+    "socials": {
+      "facebook": "https://facebook.com/NNVietAnhQuoc/",
+      "zalo": "https://zalo.me/NNVietAnhQuoc"
+    },
+    "copyright": "© 2025 SuperKids. All rights reserved."
+  },
+  "passion": {
+    "title": "Môi trường học chuẩn quốc tế",
+    "description": "Chương trình Young Leaders được thiết kế phù hợp với lứa tuổi thiếu niên, kết hợp phương pháp giảng dạy hiện đại cùng đội ngũ giáo viên giàu kinh nghiệm. Mỗi buổi học là một hành trình khám phá ngôn ngữ tự nhiên, giúp các em phát triển tư duy, sự tự tin và kỹ năng giao tiếp thực tế.",
+    "image": "/images/about/school.jpg",
+    "highlights": [
+      {
+        "icon": "check",
+        "text": "Giáo trình chuẩn quốc tế từ National Geographic Learning"
+      },
+      {
+        "icon": "check",
+        "text": "Giáo viên nước ngoài & Việt Nam giàu kinh nghiệm"
+      },
+      {
+        "icon": "check",
+        "text": "Ứng dụng công nghệ học tập độc quyền V-HUB"
+      },
+      {
+        "icon": "check",
+        "text": "Lộ trình rõ ràng theo chuẩn CEFR"
+      }
+    ]
+  }
+}
