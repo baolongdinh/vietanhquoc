@@ -69,7 +69,7 @@ const filteredTeachers = computed(() => {
 
 onMounted(async () => {
   try {
-    const response = await fetch('/data.json')
+    const response = await fetch('./data.json')
     const data = await response.json()
     teachers.value = data.teachers
   } catch (error) {

@@ -48,10 +48,10 @@ const data = ref({
   teachers: [],
 })
 
-// Fetch data từ file public/data.json
+// Fetch data từ file public./public/data.json
 onMounted(async () => {
   try {
-    const response = await fetch('/data.json')
+    const response = await fetch('./data.json')
     if (!response.ok) throw new Error('Network response was not ok')
     data.value = await response.json()
   } catch (error) {
