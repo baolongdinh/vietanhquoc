@@ -25,11 +25,14 @@ jobs:
         run: |
           npm ci
           npm run build
+          cp dist/index.html dist/404.html
+          touch dist/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           folder: dist
+          branch: gh-pages
           clean: true
           clean-exclude: |
             .nojekyll
