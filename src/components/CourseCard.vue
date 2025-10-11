@@ -1,7 +1,7 @@
 <template>
   <div class="course-card">
     <div class="course-image" v-if="course.image">
-      <img :src="course.image" :alt="course.name">
+      <img :src="`${baseUrl}${course.image}`" :alt="course.name">
       <div class="age-range">{{ course.age_range }}</div>
     </div>
     <div class="course-content">
@@ -24,9 +24,13 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
 defineProps({
   course: Object
 })
+
+const baseUrl = ref(process.env.VUE_APP_BASE_URL || '')
 </script>
 
 <style scoped>

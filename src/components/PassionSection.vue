@@ -1,7 +1,7 @@
 <template>
   <section v-if="passion" class="passion-section container">
     <div class="passion-image">
-      <img :src="passion.image" :alt="passion.title" />
+      <img :src="`${baseUrl}${passion.image}`" :alt="passion.title" />
     </div>
     <div class="passion-content">
       <h2>{{ passion.title }}</h2>
@@ -17,12 +17,16 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
 defineProps({
   passion: {
     type: Object,
     required: true
   }
 })
+
+const baseUrl = ref(process.env.VUE_APP_BASE_URL || '')
 </script>
 
 <style scoped>

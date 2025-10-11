@@ -1,7 +1,7 @@
 <template>
   <div class="teacher-card-wrapper">
     <div class="teacher-image-container">
-      <img :src="teacher.image" :alt="teacher.name">
+      <img :src="`${baseUrl}${teacher.image}`" :alt="teacher.name">
       <div class="experience-tag">
         <span>+{{ teacher.experience }}</span>
         <span>năm</span>
@@ -20,9 +20,13 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
 defineProps({
   teacher: Object
 })
+
+const baseUrl = ref(process.env.VUE_APP_BASE_URL || '')
 </script>
 
 <style scoped>

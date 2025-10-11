@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import HomePage from '../views/HomePage.vue'
 import TeachersPage from '../views/TeachersPage.vue'
 import CoursesPage from '../views/CoursesPage.vue'
@@ -34,7 +34,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(process.env.VUE_APP_BASE_URL),
   routes,
   scrollBehavior() {
     // Luôn cuộn lên đầu trang khi chuyển trang

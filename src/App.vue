@@ -39,10 +39,10 @@ const data = ref({
 
 const dataLoaded = ref(false)
 
-// Fetch data từ file public./public/data.json
+// Fetch data từ file data.json sử dụng process.env.VUE_APP_BASE_URL
 onMounted(async () => {
   try {
-    const response = await fetch('./data.json')
+    const response = await fetch(`${process.env.VUE_APP_BASE_URL}data.json`)
     if (!response.ok) throw new Error('Network response was not ok')
     data.value = await response.json()
     dataLoaded.value = true

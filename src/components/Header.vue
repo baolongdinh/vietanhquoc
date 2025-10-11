@@ -1,7 +1,7 @@
 <template>
   <header>
     <router-link to="/">
-      <img :src="header.logo" alt="Logo" class="logo">
+      <img :src="`${baseUrl}${header.logo}`" alt="Logo" class="logo">
     </router-link>
     
     <!-- Menu hamburger cho mobile -->
@@ -50,6 +50,7 @@ defineProps({
   header: Object
 })
 
+const baseUrl = ref(process.env.VUE_APP_BASE_URL || '')
 const showModal = ref(false)
 const menuActive = ref(false)
 
