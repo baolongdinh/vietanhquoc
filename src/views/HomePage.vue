@@ -5,25 +5,26 @@
       <HeroSection :hero="data.hero" />
 
       <!-- Khóa học -->
-      <section id="courses" class="courses-section container">
-        <h2 class="section-title">KHÓA HỌC</h2>
-        <div class="course-list">
-          <CourseCard
-            v-for="(course, i) in data.courses"
-            :key="i"
-            :course="course"
-          />
-        </div>
-      </section>
+      <div class="about-section-wrapper">
+        <section id="courses" class="courses-section container">
+          <h2 class="section-title">KHÓA HỌC</h2>
+          <div class="course-list">
+            <CourseCard v-for="(course, i) in data.courses" :key="i" :course="course" />
+          </div>
+        </section>
+      </div>
+
 
       <!-- Teachers Section -->
       <TeachersSection :teachers="data.teachers" />
 
-       <!-- Passion Section -->
+      <!-- Passion Section -->
       <!-- <PassionSection :passion="data.passion" /> -->
 
       <!-- About Page -->
-      <AboutPage />
+      <div class="about-section-wrapper">
+        <AboutPage />
+      </div>
 
       <!-- Activities Page -->
       <ActivitiesPage />
@@ -62,3 +63,19 @@ onMounted(async () => {
   }
 })
 </script>
+
+<style scoped>
+.about-section-wrapper {
+  background-color: #e6f7ff;
+  /* Màu xanh nhạt */
+  padding: 40px 0;
+  width: 100%;
+}
+
+.course-section-wrapper {
+  background-color: #e6f7ff;
+  /* Màu xanh nhạt */
+  padding: 40px 0;
+  width: 100%;
+}
+</style>

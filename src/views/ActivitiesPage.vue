@@ -326,7 +326,6 @@ onMounted(async () => {
   align-items: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* Cho phép click xuyên qua overlay */
 }
 
 .zoom-icon {
