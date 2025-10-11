@@ -1,6 +1,6 @@
 {
   "header": {
-    "logo": "./images/logo.jpg",
+    "logo": "images/logo.jpg",
     "menu": [
       {
         "label": "Trang chủ",
@@ -32,7 +32,7 @@
     "title": "NGOẠI NGỮ VIỆT ANH QUỐC",
     "subtitle": "YOUNG LEADERS",
     "description": "Chương trình Anh ngữ Thiếu niên giúp học viên bứt phá kỹ năng Anh ngữ học thuật, tự tin chinh phục các kỳ thi quốc tế và sẵn sàng cho các bậc học cao hơn.",
-    "bannerImage": "./images/banner.jpg",
+    "bannerImage": "images/banner.jpg",
     "cta": {
       "label": "Tìm hiểu ngay",
       "link": "#courses"
@@ -53,7 +53,7 @@
         "Rèn luyện phát âm chuẩn",
         "Phát triển kỹ năng nghe hiểu"
       ],
-      "image": "./images/course/course.webp"
+      "image": "images/course/course.webp"
     },
     {
       "id": 2,
@@ -69,7 +69,7 @@
         "Tăng cường vốn từ vựng học thuật",
         "Rèn luyện ngữ pháp và cấu trúc câu"
       ],
-      "image": "./images/course/course.webp"
+      "image": "images/course/course.webp"
     },
     {
       "id": 3,
@@ -85,7 +85,7 @@
         "Rèn luyện tư duy phản biện bằng tiếng Anh",
         "Làm quen với các dạng bài thi quốc tế"
       ],
-      "image": "./images/course/course.webp"
+      "image": "images/course/course.webp"
     },
     {
       "id": 4,
@@ -101,7 +101,7 @@
         "Rèn luyện kỹ năng viết essay",
         "Luyện phát âm và speaking theo tiêu chuẩn quốc tế"
       ],
-      "image": "./images/course/course.webp"
+      "image": "images/course/course.webp"
     },
     {
       "id": 5,
@@ -117,13 +117,13 @@
         "Phương pháp trả lời phỏng vấn speaking",
         "Luyện đề thi thực tế với giáo viên chấm điểm chuẩn"
       ],
-      "image": "./images/course/course.webp"
+      "image": "images/course/course.webp"
     }
   ],
   "about": {
     "title": "Môi trường học chuẩn quốc tế",
     "desc": "Chương trình Young Leaders được thiết kế phù hợp với lứa tuổi thiếu niên, kết hợp phương pháp giảng dạy hiện đại cùng đội ngũ giáo viên giàu kinh nghiệm. Mỗi buổi học là một hành trình khám phá ngôn ngữ tự nhiên, giúp các em phát triển tư duy, sự tự tin và kỹ năng giao tiếp thực tế.",
-    "image": "./images/about/school.jpg",
+    "image": "images/about/school.jpg",
     "highlights": [
       "Giáo trình chuẩn quốc tế từ National Geographic Learning",
       "Giáo viên nước ngoài & Việt Nam giàu kinh nghiệm",
@@ -134,7 +134,7 @@
   "aboutPage": {
     "educationSystem": {
       "title": "HỆ THỐNG GIÁO DỤC CHẤT LƯỢNG HÀNG ĐẦU TẠI VIỆT NAM",
-      "image": "./images/about.jpg",
+      "image": "images/about.jpg",
       "content": "Việt Anh Quốc hướng tới tầm nhìn trở thành \"Hệ thống giáo dục chất lượng chuẩn quốc tế hàng đầu tại Việt Nam\". Chúng tôi tự hào với:",
       "features": [
         "Đội ngũ giáo viên nước ngoài chuyên nghiệp, sở hữu giọng chuẩn Anh - Anh, Anh - Mỹ cùng kinh nghiệm giảng dạy tiếng Anh dày dặn.",
@@ -172,22 +172,22 @@
       "studentsList": [
         {
           "name": "Nguyễn Đăng Nhã Trúc",
-          "image": "./images/student/student.jpg",
+          "image": "images/student/student.jpg",
           "achievement": "Starters 15 Khiên"
         },
         {
           "name": "Phạm Việt Thục Đoan",
-          "image": "./images/student/student.jpg",
+          "image": "images/student/student.jpg",
           "achievement": "IELTS 8.5"
         },
         {
           "name": "Đoàn Bá Khánh Nguyên",
-          "image": "./images/student/student.jpg",
+          "image": "images/student/student.jpg",
           "achievement": "IELTS 8.5"
         },
         {
           "name": "Đoàn Bá Khánh Giang",
-          "image": "./images/student/student.jpg",
+          "image": "images/student/student.jpg",
           "achievement": "IELTS 8.5"
         }
       ]
@@ -197,25 +197,25 @@
       "testimonialsList": [
         {
           "name": "Bé Nguyễn Minh Khôi",
-          "image": "./images/parent/parent.jpg",
+          "image": "images/parent/parent.jpg",
           "experience": "+5 năm đồng hành",
           "content": "Con tôi đã có sự tiến bộ vượt bậc về khả năng giao tiếp tiếng Anh sau 2 khóa học tại trung tâm."
         },
         {
           "name": "Bé Trần Minh Anh",
-          "image": "./images/parent/parent.jpg",
+          "image": "images/parent/parent.jpg",
           "experience": "+3 năm đồng hành",
           "content": "Phương pháp giảng dạy tại trung tâm rất phù hợp với con tôi, giúp con hứng thú học tiếng Anh hơn."
         },
         {
           "name": "Bé Nguyễn Tất Minh Phương",
-          "image": "./images/parent/parent.jpg",
+          "image": "images/parent/parent.jpg",
           "experience": "+12 năm đồng hành",
           "content": "Gia đình rất yên tâm vì bé được tương tác nhiều với giáo viên và bạn bè qua các hoạt động vừa học vừa chơi."
         },
         {
           "name": "Bé Nguyễn Tất Minh Khánh",
-          "image": "./images/parent/parent.jpg",
+          "image": "images/parent/parent.jpg",
           "experience": "+12 năm đồng hành",
           "content": "Gia đình rất yên tâm vì bé được tương tác nhiều với giáo viên và bạn bè qua các hoạt động vừa học vừa chơi."
         }
@@ -225,7 +225,7 @@
   "teachers": [
     {
       "name": "Thầy LÊ ANH TUẤN",
-      "image": "./images/teacher/teacher1.jpg",
+      "image": "images/teacher/teacher1.jpg",
       "experience": 5,
       "type": "vietnamese",
       "qualification": "TESOL, IELTS 8.0",
@@ -233,7 +233,7 @@
     },
     {
       "name": "Cô PHẠM THỊ HỒNG NHUNG",
-      "image": "./images/teacher/teacher2.jpg",
+      "image": "images/teacher/teacher2.jpg",
       "experience": 4,
       "type": "vietnamese",
       "qualification": "CELTA, IELTS 8.5",
@@ -241,7 +241,7 @@
     },
     {
       "name": "Thầy CALLUM BALFOUR",
-      "image": "./images/teacher/teacher3.jpg",
+      "image": "images/teacher/teacher3.jpg",
       "experience": 6,
       "type": "foreign",
       "qualification": "CELTA, BA in English",
@@ -249,7 +249,7 @@
     },
     {
       "name": "Cô ANNE KENTHILL",
-      "image": "./images/teacher/teacher4.jpg",
+      "image": "images/teacher/teacher4.jpg",
       "experience": 9,
       "type": "foreign",
       "qualification": "TESOL, MA in Education",
@@ -257,7 +257,7 @@
     },
     {
       "name": "Thầy NGUYỄN MINH HIẾU",
-      "image": "./images/teacher/teacher1.jpg",
+      "image": "images/teacher/teacher1.jpg",
       "experience": 7,
       "type": "vietnamese",
       "qualification": "TEFL, IELTS 8.0",
@@ -265,7 +265,7 @@
     },
     {
       "name": "Cô EMILIE SLATER",
-      "image": "./images/teacher/teacher2.jpg",
+      "image": "images/teacher/teacher2.jpg",
       "experience": 5,
       "type": "foreign",
       "qualification": "CELTA, BA in Linguistics",
@@ -285,7 +285,7 @@
   "passion": {
     "title": "Môi trường học chuẩn quốc tế",
     "description": "Chương trình Young Leaders được thiết kế phù hợp với lứa tuổi thiếu niên, kết hợp phương pháp giảng dạy hiện đại cùng đội ngũ giáo viên giàu kinh nghiệm. Mỗi buổi học là một hành trình khám phá ngôn ngữ tự nhiên, giúp các em phát triển tư duy, sự tự tin và kỹ năng giao tiếp thực tế.",
-    "image": "./images/about/school.jpg",
+    "image": "images/about/school.jpg",
     "highlights": [
       {
         "icon": "check",
