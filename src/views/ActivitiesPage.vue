@@ -19,7 +19,7 @@
                 class="activity-image"
                 @click="openImageModal(activity, getImageIndex(activity, index))"
               >
-              <div class="image-overlay">
+              <div class="image-overlay" @click="openImageModal(activity, getImageIndex(activity, index))">
                 <span class="zoom-icon">🔍</span>
               </div>
             </div>
@@ -109,6 +109,7 @@ const currentActivityImages = computed(() => {
 
 // Mở modal xem ảnh phóng to
 const openImageModal = (activity, imageIndex) => {
+  console.log('Opening modal for image:', imageIndex, 'of activity:', activity.title)
   currentActivity.value = activity
   selectedImageIndex.value = imageIndex
   selectedImage.value = activity.images[imageIndex]
@@ -117,6 +118,14 @@ const openImageModal = (activity, imageIndex) => {
   
   // Ngăn cuộn trang khi modal mở
   document.body.style.overflow = 'hidden'
+  
+  // Đảm bảo modal hiển thị đúng
+  setTimeout(() => {
+    if (!showModal.value) {
+      console.log('Modal không hiển thị, thử lại')
+      showModal.value = true
+    }
+  }, 100)
 }
 
 // Đóng modal
@@ -358,8 +367,10 @@ onMounted(async () => {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 9999;
   animation: fadeIn 0.3s ease;
+  opacity: 1;
+  visibility: visible;
 }
 
 @keyframes fadeIn {

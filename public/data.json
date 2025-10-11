@@ -231,14 +231,19 @@
       "id": 1,
       "title": "Trại hè tiếng Anh 2023",
       "description": "Chương trình trại hè tiếng Anh kéo dài 2 tuần với nhiều hoạt động thú vị, giúp học sinh rèn luyện kỹ năng giao tiếp và phát triển tư duy sáng tạo.",
-        "images": [
+      "images": [
         "images/activities/activity1.jpg",
         "images/activities/activity1.jpg",
         "images/activities/activity1.jpg",
         "images/activities/activity1.jpg",
         "images/activities/activity1.jpg",
         "images/activities/activity1.jpg",
-         "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
         "images/activities/activity1.jpg",
         "images/activities/activity1.jpg"
       ]
@@ -254,7 +259,12 @@
         "images/activities/activity1.jpg",
         "images/activities/activity1.jpg",
         "images/activities/activity1.jpg",
-         "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
         "images/activities/activity1.jpg",
         "images/activities/activity1.jpg"
       ]
@@ -263,7 +273,12 @@
       "id": 3,
       "title": "Lễ hội văn hóa quốc tế",
       "description": "Học sinh được tìm hiểu về văn hóa các nước nói tiếng Anh thông qua các hoạt động trải nghiệm thực tế, trò chơi và ẩm thực đặc trưng. Đây là cơ hội tuyệt vời để học sinh mở rộng kiến thức và giao lưu văn hóa.",
-        "images": [
+      "images": [
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
         "images/activities/activity1.jpg",
         "images/activities/activity1.jpg",
         "images/activities/activity1.jpg",
