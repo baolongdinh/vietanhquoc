@@ -82,8 +82,9 @@ header {
 }
 
 .logo {
-  height: 60px;
+  height: 80px;
   max-width: 100%;
+  object-fit: contain;
 }
 
 nav {
@@ -106,14 +107,15 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #24478f;
+  color: #1a4b8c;
   font-weight: 700;
   font-size: 1.2rem;
-  transition: color 0.3s;
+  transition: color 0.3s, transform 0.2s;
 }
 
 nav a:hover {
-  color: #00d2ff;
+  color: #3a7bd5;
+  transform: translateY(-2px);
 }
 
 .menu-toggle {
@@ -153,19 +155,21 @@ nav a:hover {
 }
 
 .cta-button {
-  background-color: #ff0000;
+  background-color: #ff5252;
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 30px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
-  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 82, 82, 0.3);
 }
 
 .cta-button:hover {
-  background-color: #e00000;
+  background-color: #e03e3e;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 82, 82, 0.4);
 }
 
 /* Modal styles */

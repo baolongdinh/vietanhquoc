@@ -15,6 +15,10 @@
         "link": "/teachers"
       },
       {
+        "label": "Hoạt động",
+        "link": "/activities"
+      },
+      {
         "label": "Về chúng tôi",
         "link": "/about"
       },
@@ -222,6 +226,56 @@
       ]
     }
   },
+  "activities": [
+    {
+      "id": 1,
+      "title": "Trại hè tiếng Anh 2023",
+      "description": "Chương trình trại hè tiếng Anh kéo dài 2 tuần với nhiều hoạt động thú vị, giúp học sinh rèn luyện kỹ năng giao tiếp và phát triển tư duy sáng tạo.",
+        "images": [
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+         "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Cuộc thi hùng biện tiếng Anh",
+      "description": "Cuộc thi thường niên giúp học sinh phát triển kỹ năng thuyết trình và tự tin nói tiếng Anh trước đám đông. Học sinh được chuẩn bị kỹ lưỡng và nhận được sự hướng dẫn từ các giáo viên giàu kinh nghiệm.",
+      "images": [
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+         "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Lễ hội văn hóa quốc tế",
+      "description": "Học sinh được tìm hiểu về văn hóa các nước nói tiếng Anh thông qua các hoạt động trải nghiệm thực tế, trò chơi và ẩm thực đặc trưng. Đây là cơ hội tuyệt vời để học sinh mở rộng kiến thức và giao lưu văn hóa.",
+        "images": [
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity1.jpg"
+      ]
+    }
+  ],
   "teachers": [
     {
       "name": "Thầy LÊ ANH TUẤN",
@@ -273,14 +327,27 @@
     }
   ],
   "footer": {
-    "address": "E2-12, ĐƯỜNG C, KDC HIM LAM PHÚ ĐÔNG, PHƯỜNG AN BÌNH, TP. DĨ AN, TỈNH BÌNH DƯƠNG",
-    "phone": "091 993 28 55",
+    "company": {
+      "name_vi": "CÔNG TY TNHH ĐÀO TẠO VÀ PHÁT TRIỂN VIỆT ANH QUỐC",
+      "name_en": "VIET ANH QUOC TRAINING AND DEVELOPMENT COMPANY LIMITED",
+      "name_short": "VIET ANH QUOC TRAINING AND DEVELOPMENT CO.,LTD",
+      "business_license": {
+        "number": "3702559891",
+        "first_registration": "08/05/2017",
+        "latest_change": "03/10/2025",
+        "change_number": "2",
+        "issued_by": "Sở Kế Hoạch Đầu Tư TP Hồ Chí Minh"
+      }
+    },
+    "address": "Lô E2-12, Đường C, Dự án phát triển Đông A, Đường Trần Thị Vững, Phường Dĩ An, Thành phố Hồ Chí Minh, Việt Nam",
+    "address_alt": "E2-12, ĐƯỜNG C, KDC HIM LAM PHÚ ĐÔNG, PHƯỜNG AN BÌNH, TP. DĨ AN, TỈNH BÌNH DƯƠNG",
+    "phone": "0913968338",
     "email": "Vietanhquoc@gmail.com",
     "socials": {
       "facebook": "https://facebook.com/NNVietAnhQuoc/",
       "zalo": "https://zalo.me/NNVietAnhQuoc"
     },
-    "copyright": "© 2025 SuperKids. All rights reserved."
+    "copyright": "© 2025 Viet Anh Quoc. All rights reserved."
   },
   "passion": {
     "title": "Môi trường học chuẩn quốc tế",

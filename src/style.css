@@ -1,12 +1,15 @@
 
 /* --- Biến màu và cài đặt chung --- */
 :root {
-  --primary-blue: #003d79;
-  --accent-orange: #ff9900;
-  --light-gray: #f8f9fa;
+  --primary-blue: #1a4b8c;
+  --secondary-blue: #3a7bd5;
+  --light-blue: #d0e4ff;
+  --accent-yellow: #ffd700;
+  --accent-red: #ff5252;
   --text-dark: #333;
   --text-light: #fff;
   --border-color: #dee2e6;
+  --background-light: #f8f9ff;
 }
 
 body {
@@ -22,7 +25,7 @@ h1, h2, h4, h5, h6 {
 }
 
 h3 {
-  color: var( --light-gray);
+  color: var(--text-light);
   font-weight: 700;
 }
 
@@ -34,7 +37,7 @@ a {
 }
 
 a:hover {
-  color: var(--accent-orange);
+  color: var(--secondary-blue);
 }
 
 .container {
@@ -52,7 +55,7 @@ a:hover {
 }
 
 .cta-button {
-  background-color: var(--accent-orange);
+  background-color: var(--accent-red);
   color: var(--text-light);
   padding: 12px 24px;
   border-radius: 50px;
@@ -60,12 +63,15 @@ a:hover {
   text-transform: uppercase;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .cta-button:hover {
-  background-color: #e68a00;
+  background-color: #e03e3e;
   color: var(--text-light);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 

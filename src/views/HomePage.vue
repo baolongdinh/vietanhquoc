@@ -20,10 +20,13 @@
       <TeachersSection :teachers="data.teachers" />
 
        <!-- Passion Section -->
-      <PassionSection :passion="data.passion" />
+      <!-- <PassionSection :passion="data.passion" /> -->
 
       <!-- About Page -->
       <AboutPage />
+
+      <!-- Activities Page -->
+      <ActivitiesPage />
     </main>
   </div>
 </template>
@@ -37,7 +40,7 @@ import CourseCard from '../components/CourseCard.vue'
 import TeachersSection from '../components/TeachersSection.vue'
 import PassionSection from '../components/PassionSection.vue'
 import AboutPage from './AboutPage.vue'
-
+import ActivitiesPage from './ActivitiesPage.vue'
 
 // State mặc định tránh undefined khi render sớm
 const data = ref({
