@@ -107,7 +107,8 @@ nav li {
 nav a {
   text-decoration: none;
   color: #24478f;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 1.2rem;
   transition: color 0.3s;
 }
 
