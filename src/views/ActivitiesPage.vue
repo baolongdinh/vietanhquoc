@@ -17,6 +17,7 @@
                 :src="`${baseUrl}${image}`" 
                 :alt="`${activity.title} - Ảnh ${getImageIndex(activity, index) + 1}`" 
                 class="activity-image"
+                loading="lazy"
                 @click="openImageModal(activity, getImageIndex(activity, index))"
               >
               <div class="image-overlay" @click="openImageModal(activity, getImageIndex(activity, index))">
@@ -61,6 +62,7 @@
             :src="`${baseUrl}${selectedImage}`" 
             :alt="selectedImageAlt" 
             class="modal-image"
+            loading="lazy"
           >
         </div>
         <div class="modal-navigation">

@@ -1,7 +1,7 @@
 <template>
   <header>
     <router-link to="/">
-      <img :src="`${baseUrl}${header.logo}`" alt="Logo" class="logo">
+      <img :src="`${baseUrl}${header.logo}`" alt="Logo" class="logo" loading="lazy">
     </router-link>
     
     <!-- Menu hamburger cho mobile -->

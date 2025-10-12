@@ -1,7 +1,7 @@
 <template>
   <div class="teacher-card-wrapper">
     <div class="teacher-image-container">
-      <img :src="`${baseUrl}${teacher.image}`" :alt="teacher.name">
+      <img :src="`${baseUrl}${teacher.image}`" :alt="teacher.name" loading="lazy">
       <div class="experience-tag">
         <span>+{{ teacher.experience }}</span>
         <span>năm</span>

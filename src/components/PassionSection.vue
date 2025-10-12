@@ -1,7 +1,7 @@
 <template>
   <section v-if="passion" class="passion-section container">
     <div class="passion-image">
-      <img :src="`${baseUrl}${passion.image}`" :alt="passion.title" />
+      <img :src="`${baseUrl}${passion.image}`" :alt="passion.title" loading="lazy" />
     </div>
     <div class="passion-content">
       <h2>{{ passion.title }}</h2>

@@ -25,7 +25,7 @@
             <div class="value-card" v-for="(value, index) in aboutData.visionMission.values" :key="index">
               <div class="icon-container">
                 <i :class="value.icon" v-if="value.icon.includes('fas')"></i>
-                <img v-else :src="value.icon" :alt="value.title" class="value-icon-img">
+                <img v-else :src="value.icon" :alt="value.title" class="value-icon-img" loading="lazy">
               </div>
               <h3>{{ value.title }}</h3>
               <p v-if="!value.values">{{ value.content }}</p>
@@ -68,7 +68,7 @@
         >
           <swiper-slide v-for="(student, index) in aboutData.students.studentsList" :key="index">
             <div class="student-card">
-              <img :src="student.image" :alt="'Học viên ' + student.name" class="student-image">
+              <img :src="student.image" :alt="'Học viên ' + student.name" class="student-image" loading="lazy">
               <div class="student-info">
                 <div class="achievement">{{ student.achievement }}</div>
                 <h3>Học viên</h3>
@@ -110,7 +110,7 @@
         >
           <swiper-slide v-for="(testimonial, index) in aboutData.testimonials.testimonialsList" :key="index">
             <div class="testimonial-card">
-              <img :src="testimonial.image" :alt="'Phụ huynh ' + testimonial.name" class="parent-image">
+              <img :src="testimonial.image" :alt="'Phụ huynh ' + testimonial.name" class="parent-image" loading="lazy">
               <div class="testimonial-info">
                 <div class="experience">{{ testimonial.experience }}</div>
                 <h3>Phụ huynh</h3>

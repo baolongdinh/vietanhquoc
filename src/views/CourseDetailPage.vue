@@ -3,7 +3,7 @@
     <div class="container">
       <div class="course-header">
         <div class="course-image">
-          <img :src="course.image" :alt="course.name">
+          <img :src="course.image" :alt="course.name" loading="lazy">
           <div class="age-range">{{ course.age_range }}</div>
         </div>
         <div class="course-info">

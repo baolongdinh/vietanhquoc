@@ -1,7 +1,7 @@
 <template>
   <div class="course-card">
     <div class="course-image" v-if="course.image">
-      <img :src="`${baseUrl}${course.image}`" :alt="course.name">
+      <img :src="`${baseUrl}${course.image}`" :alt="course.name" loading="lazy">
       <div class="age-range">{{ course.age_range }}</div>
     </div>
     <div class="course-content">
