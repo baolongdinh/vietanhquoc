@@ -5,7 +5,7 @@
       <h1>{{ hero.title }}</h1>
       <h2>{{ hero.subtitle }}</h2>
       <p>{{ hero.description }}</p>
-      <a :href="hero.cta.link" class="cta-button">{{ hero.cta.label }}</a>
+      <a :href="hero.cta.link" class="btn btn-secondary">{{ hero.cta.label }}</a>
     </div>
   </section>
 </template>

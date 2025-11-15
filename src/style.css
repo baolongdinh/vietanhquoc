@@ -1,15 +1,32 @@
 
 /* --- Biến màu và cài đặt chung --- */
 :root {
-  --primary-blue: #1a4b8c;
-  --secondary-blue: #3a7bd5;
-  --light-blue: #d0e4ff;
-  --accent-yellow: #ffd700;
-  --accent-red: #ff5252;
-  --text-dark: #333;
-  --text-light: #fff;
-  --border-color: #dee2e6;
-  --background-light: #f8f9ff;
+  /* Blues (brand) */
+  --blue-900: #003D82; /* xanh đậm */
+  --blue-700: #003D82; /* điểm nhấn tiêu đề */
+  --blue-600: #003D82; /* xanh chủ đạo */
+  --blue-500: #4A9FE7; /* xanh sáng nhấn */
+  --blue-100: #E8F4FA; /* xanh nhạt */
+  --blue-50: #E8F4FA; /* nền xanh rất nhạt */
+  --blue-accent: #4A9FE7; /* dùng cho gradient hero */
+
+  /* Accents (brand) */
+  --accent-yellow: #FFB800; /* vàng */
+  --accent-red: #E63946; /* đỏ */
+  --accent-green: #4CAF50; /* xanh lá nhấn */
+  --accent-orange: #FFB800; /* alias vàng */
+
+  /* Legacy aliases for compatibility */
+  --primary-blue: var(--blue-900);
+  --secondary-blue: var(--blue-600);
+  --light-blue: var(--blue-100);
+
+  /* Base */
+  --text-dark: #0f172a;
+  --text-light: #ffffff;
+  --border-color: #d1d5db;
+  --background-light: #f8fafc;
+  --light-gray: #f3f4f6;
 }
 
 body {
@@ -18,6 +35,11 @@ body {
   color: var(--text-dark);
   background-color: #fff;
 }
+
+/* Scroll reveal utility */
+.reveal { opacity: 0; transform: translateY(12px); }
+.reveal.in-view { animation: fadeUpGlobal 0.6s ease both; }
+@keyframes fadeUpGlobal { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
 
 h1, h2, h4, h5, h6 {
   color: var(--primary-blue);
@@ -74,6 +96,25 @@ a:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+/* Buttons standard */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-primary { background-color: var(--blue-600); color: #fff; }
+.btn-primary:hover { background-color: var(--blue-700); transform: translateY(-1px); box-shadow: 0 6px 12px rgba(11,42,111,0.2); }
+
+.btn-secondary { background-color: var(--accent-yellow); color: #111827; }
+.btn-secondary:hover { background-color: #ffca28; transform: translateY(-1px); box-shadow: 0 6px 12px rgba(11,42,111,0.2); }
+
+.btn-cta { background-color: var(--accent-red); color: #fff; }
+.btn-cta:hover { background-color: #dc2626; transform: translateY(-1px); box-shadow: 0 6px 12px rgba(11,42,111,0.2); }
+
 
 /* --- Header --- */
 header {
@@ -129,7 +170,7 @@ header nav ul li a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 50, 100, 0.6);
+  background-color: rgba(10, 40, 111, 0.65); /* dựa trên blue-900 */
 }
 
 .hero-section .hero-content {
@@ -150,7 +191,7 @@ header nav ul li a {
   font-size: 2rem;
   font-weight: 700;
   margin: 10px 0 20px 0;
-  color: var(--accent-orange);
+  color: var(--accent-yellow);
 }
 
 .hero-section p {
@@ -160,7 +201,7 @@ header nav ul li a {
 
 /* --- Courses Section --- */
 .courses-section {
-  background-color: var(--light-gray);
+  background-color: var(--blue-50);
 }
 
 .course-list {
@@ -345,7 +386,7 @@ footer .copyright {
   position: absolute;
   top: 15px;
   right: 15px;
-  background-color: #ff0000; /* Màu đỏ nổi bật */
+  background-color: var(--accent-red);
   color: var(--text-light);
   padding: 8px 12px;
   border-radius: 10px;

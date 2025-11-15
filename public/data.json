@@ -4,27 +4,48 @@
     "menu": [
       {
         "label": "Trang chủ",
-        "link": "/"
+        "link": "/",
+        "active": true
       },
       {
-        "label": "Khóa học",
-        "link": "/courses"
+        "label": "Giới thiệu",
+        "link": "/about",
+        "active": true
       },
       {
-        "label": "Giáo viên",
-        "link": "/teachers"
+        "label": "Khóa Học",
+        "link": "/courses",
+        "active": true
+      },
+      {
+        "label": "Lịch học",
+        "link": "/schedule",
+        "active": false
+      },
+      {
+        "label": "Tin tức",
+        "link": "/news",
+        "active": true
       },
       {
         "label": "Hoạt động",
-        "link": "/activities"
+        "link": "/activities",
+        "active": true
       },
       {
         "label": "Về chúng tôi",
-        "link": "/about"
+        "link": "/about-us",
+        "active": true
+      },
+      {
+        "label": "Hình ảnh",
+        "link": "/gallery",
+        "active": true
       },
       {
         "label": "Liên hệ",
-        "link": "#footer"
+        "link": "/contact",
+        "active": true
       }
     ],
     "cta": {
@@ -33,24 +54,35 @@
     }
   },
   "hero": {
-    "title": "NGOẠI NGỮ VIỆT ANH QUỐC",
+    "title": "Cùng Việt Anh Quốc – Chắp Cánh Tương lai",
     "subtitle": "YOUNG LEADERS",
     "description": "Chương trình Anh ngữ Thiếu niên giúp học viên bứt phá kỹ năng Anh ngữ học thuật, tự tin chinh phục các kỳ thi quốc tế và sẵn sàng cho các bậc học cao hơn.",
     "bannerImage": "images/banner.jpg",
     "cta": {
-      "label": "Tìm hiểu ngay",
-      "link": "#courses"
+      "label": "Đăng ký tư vấn miễn phí",
+      "link": "#"
     }
   },
   "courses": [
     {
       "id": 1,
       "level": "Pre-A1 - A1",
-      "name": "PYL 1 - 3",
+      "name": "Tiếng Anh Mầm Non Vui Nhộn",
       "hours": 48,
-      "desc": "Lộ trình nền tảng giúp học sinh lớp 1-3 làm quen tiếng Anh, xây dựng vốn từ vựng và kỹ năng nghe nói cơ bản.",
-      "age_range": "4-6 tuổi",
+      "desc": "Giúp trẻ làm quen với tiếng Anh qua bài hát, trò chơi, hình ảnh sinh động. Phát triển kỹ năng nghe và nói tự nhiên, tăng phản xạ ngôn ngữ.",
+      "age_range": "3-6 tuổi",
       "price": 3500000,
+      "schedule": "2 buổi/tuần, mỗi buổi 1 giờ 30 phút",
+      "objectives": [
+        "Giúp trẻ làm quen với tiếng Anh qua bài hát, trò chơi, hình ảnh sinh động",
+        "Phát triển kỹ năng nghe và nói tự nhiên, tăng phản xạ ngôn ngữ",
+        "Xây dựng nền tảng phát âm chuẩn, phát triển sự tự tin"
+      ],
+      "method": "Học qua hoạt động tương tác, vui chơi và kể chuyện",
+      "advantages": [
+        "Giáo viên giàu kinh nghiệm với trẻ nhỏ",
+        "Lớp học nhỏ 8-10 bé"
+      ],
       "features": [
         "Phát triển vốn từ vựng cơ bản",
         "Làm quen với ngữ pháp đơn giản",
@@ -61,14 +93,25 @@
     },
     {
       "id": 2,
-      "level": "A1+ - A2+ (KET)",
-      "name": "YLC 1 - 6",
+      "level": "A1+ - A2+ (Starters, Movers)",
+      "name": "Tiếng Anh Thiếu Nhi – Chuẩn Cambridge",
       "hours": 48,
-      "desc": "Phát triển kỹ năng tiếng Anh học thuật, làm quen với chuẩn Cambridge KET. Tăng cường khả năng phản xạ và tư duy tiếng Anh.",
-      "age_range": "6-11 tuổi",
+      "desc": "Phát triển đầy đủ 4 kỹ năng: nghe – nói – đọc – viết. Giúp học viên đạt chuẩn đầu ra Cambridge Starters, Movers.",
+      "age_range": "7-11 tuổi",
       "price": 4200000,
+      "schedule": "2 buổi/tuần, mỗi buổi 1 giờ 30 phút",
+      "objectives": [
+        "Phát triển đầy đủ 4 kỹ năng: nghe – nói – đọc – viết",
+        "Giúp học viên đạt chuẩn đầu ra Cambridge Starters, Movers",
+        "Tạo nền tảng vững chắc cho giai đoạn học tiếng Anh nâng cao"
+      ],
+      "method": "Kết hợp học tương tác, bài tập thực hành và trò chơi giáo dục",
+      "advantages": [
+        "Giáo trình chuẩn quốc tế",
+        "Kiểm tra đánh giá định kỳ"
+      ],
       "features": [
-        "Luyện thi chứng chỉ Cambridge KET",
+        "Luyện thi chứng chỉ Cambridge Starters, Movers",
         "Phát triển 4 kỹ năng nghe-nói-đọc-viết",
         "Tăng cường vốn từ vựng học thuật",
         "Rèn luyện ngữ pháp và cấu trúc câu"
@@ -77,154 +120,119 @@
     },
     {
       "id": 3,
-      "level": "A2+ - B1 (PET)",
-      "name": "YLC Advanced",
+      "level": "A2+ - B1 (KET, PET)",
+      "name": "Tiếng Anh Thiếu Niên – Luyện thi Cambridge KET, PET",
       "hours": 60,
-      "desc": "Củng cố toàn diện ngữ pháp, kỹ năng nghe - nói - đọc - viết, chuẩn bị cho kỳ thi Cambridge PET.",
-      "age_range": "11-15 tuổi",
+      "desc": "Nâng cao kỹ năng học thuật và giao tiếp. Chuẩn bị thi chứng chỉ Cambridge KET, PET. Phát triển kỹ năng viết luận và thuyết trình.",
+      "age_range": "12-16 tuổi",
       "price": 4800000,
+      "schedule": "3-4 buổi/tuần, mỗi buổi 2 giờ",
+      "objectives": [
+        "Nâng cao kỹ năng học thuật và giao tiếp",
+        "Chuẩn bị thi chứng chỉ Cambridge KET, PET",
+        "Phát triển kỹ năng viết luận và thuyết trình"
+      ],
+      "method": "Học theo dự án, luyện đề thi thử, rèn luyện kỹ năng thuyết trình",
+      "advantages": [
+        "Đội ngũ giáo viên luyện thi chuyên nghiệp",
+        "Cam kết đầu ra"
+      ],
       "features": [
-        "Luyện thi chứng chỉ Cambridge PET",
+        "Luyện thi chứng chỉ Cambridge KET, PET",
         "Phát triển kỹ năng giao tiếp nâng cao",
         "Rèn luyện tư duy phản biện bằng tiếng Anh",
         "Làm quen với các dạng bài thi quốc tế"
       ],
       "image": "images/course/course.webp"
-    },
-    {
-      "id": 4,
-      "level": "B1 - B2 (FCE)",
-      "name": "IELTS Foundation",
-      "hours": 72,
-      "desc": "Khóa học chuẩn bị nền tảng vững chắc cho kỳ thi IELTS, phát triển kỹ năng học thuật và tư duy phản biện.",
-      "age_range": "15+ tuổi",
-      "price": 4500000,
-      "features": [
-        "Làm quen với format bài thi IELTS",
-        "Phát triển vốn từ vựng học thuật",
-        "Rèn luyện kỹ năng viết essay",
-        "Luyện phát âm và speaking theo tiêu chuẩn quốc tế"
-      ],
-      "image": "images/course/course.webp"
-    },
-    {
-      "id": 5,
-      "level": "B2 - C1",
-      "name": "IELTS Advanced",
-      "hours": 90,
-      "desc": "Khóa học chuyên sâu giúp học viên đạt điểm IELTS 6.5+, tập trung vào các kỹ năng cao cấp và chiến lược làm bài thi.",
-      "age_range": "Người đi làm",
-      "price": 5000000,
-      "features": [
-        "Chiến lược làm bài thi đạt điểm cao",
-        "Kỹ thuật viết essay band 7.0+",
-        "Phương pháp trả lời phỏng vấn speaking",
-        "Luyện đề thi thực tế với giáo viên chấm điểm chuẩn"
-      ],
-      "image": "images/course/course.webp"
     }
   ],
   "about": {
-    "title": "Môi trường học chuẩn quốc tế",
-    "desc": "Chương trình Young Leaders được thiết kế phù hợp với lứa tuổi thiếu niên, kết hợp phương pháp giảng dạy hiện đại cùng đội ngũ giáo viên giàu kinh nghiệm. Mỗi buổi học là một hành trình khám phá ngôn ngữ tự nhiên, giúp các em phát triển tư duy, sự tự tin và kỹ năng giao tiếp thực tế.",
+    "title": "Lý do chọn Việt Anh Quốc",
+    "desc": "Trung Tâm Ngoại Ngữ Việt Anh Quốc là đơn vị đào tạo tiếng Anh uy tín tại TP.HCM, chuyên cung cấp các chương trình học chất lượng cao cho mọi lứa tuổi: từ mẫu giáo đến ác lứa tuổi học sinh THCS và THPT, luyện thi chứng chỉ quốc tế như IELTS, Cambridge.",
     "image": "images/about/school.jpg",
     "highlights": [
-      "Giáo trình chuẩn quốc tế từ National Geographic Learning",
-      "Giáo viên nước ngoài & Việt Nam giàu kinh nghiệm",
-      "Ứng dụng công nghệ học tập độc quyền V-HUB",
-      "Lộ trình rõ ràng theo chuẩn CEFR"
+      "Đội ngũ giáo viên giàu kinh nghiệm",
+      "Phương pháp học hiện đại, sinh động",
+      "Cơ sở vật chất đạt chuẩn",
+      "Cam kết đầu ra rõ ràng"
     ]
   },
   "aboutPage": {
-    "educationSystem": {
-      "title": "HỆ THỐNG GIÁO DỤC CHẤT LƯỢNG HÀNG ĐẦU TẠI VIỆT NAM",
-      "image": "images/about.jpg",
-      "content": "Việt Anh Quốc hướng tới tầm nhìn trở thành \"Hệ thống giáo dục chất lượng chuẩn quốc tế hàng đầu tại Việt Nam\". Chúng tôi tự hào với:",
-      "features": [
-        "Đội ngũ giáo viên nước ngoài chuyên nghiệp, sở hữu giọng chuẩn Anh - Anh, Anh - Mỹ cùng kinh nghiệm giảng dạy tiếng Anh dày dặn.",
-        "Liên kết chặt chẽ với các tổ chức giáo dục uy tín toàn cầu, mở ra cầu nối đến với cơ hội học tập vượt trội.",
-        "Hệ thống gồm 68 trung tâm tiếng Anh được đặt tại những vị trí thuận tiện, dễ di chuyển.",
-        "Chi phí học tập hợp lý với nhiều học bổng hấp dẫn, cùng các chương trình hỗ trợ học phí linh hoạt."
-      ],
-      "ctaText": "Hãy khám phá, làm chủ 4 kỹ năng tiếng Anh với sự đồng hành sát cánh từ VAQ!"
-    },
-    "visionMission": {
-      "values": [
-        {
-          "title": "TẦM NHÌN",
-          "icon": "fas fa-eye value-icon",
-          "content": "Với mục tiêu trở thành hệ thống giáo dục chuẩn quốc tế hàng đầu tại Việt Nam, Việt Anh Quốc mong muốn trang bị cho thế hệ trẻ những giá trị toàn cầu để sẵn sàng kết nối và hội nhập với thế giới."
-        },
-        {
-          "title": "SỨ MỆNH",
-          "icon": "fas fa-bullseye value-icon",
-          "content": "Việt Anh Quốc tiếp sức cho các thế hệ trẻ Việt Nam tự tin kết nối với thế giới và tạo dựng tương lai có ý nghĩa bằng cách trang bị kiến thức và tư duy toàn cầu, kỹ năng vượt trội cùng nền tảng ngôn ngữ vững chắc và giá trị sống phong phú."
-        },
-        {
-          "title": "GIÁ TRỊ CỐT LÕI",
-          "icon": "fas fa-star value-icon",
-          "values": [
-            "Giữ vững uy tín chất lượng đào tạo và dịch vụ.",
-            "Thấu hiểu và hành động với sự quan tâm chân thành.",
-            "Hợp tác và phát triển không ngừng vì một tương lai tốt đẹp hơn cho mọi người."
-          ]
-        }
+    "introduction": {
+      "title": "Giới thiệu tổng quan",
+      "content": [
+        "Trung Tâm Ngoại Ngữ Việt Anh Quốc là đơn vị đào tạo tiếng Anh uy tín tại TP.HCM, cung cấp chương trình học chất lượng cao cho mọi lứa tuổi.",
+        "Lịch sử hình thành và quá trình phát triển: Khởi nguồn từ niềm đam mê giảng dạy, trung tâm không ngừng mở rộng quy mô, nâng cao chất lượng và ứng dụng công nghệ vào giảng dạy."
       ]
     },
-    "students": {
-      "title": "HỌC VIÊN XUẤT SẮC",
-      "studentsList": [
-        {
-          "name": "Nguyễn Đăng Nhã Trúc",
-          "image": "images/student/student.jpg",
-          "achievement": "Starters 15 Khiên"
-        },
-        {
-          "name": "Phạm Việt Thục Đoan",
-          "image": "images/student/student.jpg",
-          "achievement": "IELTS 8.5"
-        },
-        {
-          "name": "Đoàn Bá Khánh Nguyên",
-          "image": "images/student/student.jpg",
-          "achievement": "IELTS 8.5"
-        },
-        {
-          "name": "Đoàn Bá Khánh Giang",
-          "image": "images/student/student.jpg",
-          "achievement": "IELTS 8.5"
-        }
+    "missionVision": {
+      "title": "Sứ mệnh – Tầm nhìn – Giá trị cốt lõi",
+      "mission": "Trung Tâm Ngoại Ngữ Việt Anh Quốc cam kết mang đến môi trường học tập tiếng Anh chất lượng cao, nơi học viên ở mọi độ tuổi được trang bị kiến thức, kỹ năng và sự tự tin để sử dụng tiếng Anh như một công cụ hội nhập toàn cầu. Chúng tôi không chỉ dạy ngôn ngữ, mà còn truyền cảm hứng học tập lâu dài, tư duy độc lập và tinh thần học hỏi không ngừng.",
+      "vision": "Trở thành một trong những trung tâm đào tạo tiếng Anh hàng đầu tại khu vực phía Nam, được phụ huynh và học viên tin tưởng lựa chọn nhờ vào chất lượng giảng dạy, sự tận tâm của đội ngũ và hiệu quả đào tạo vượt trội. Trong 5 năm tới, Việt Anh Quốc hướng đến việc mở rộng hệ thống cơ sở, đa dạng hóa chương trình học và ứng dụng công nghệ hiện đại vào giảng dạy để nâng cao trải nghiệm học tập cho học viên.",
+      "coreValues": [
+        "Chất lượng là ưu tiên hàng đầu",
+        "Tận tâm với từng học viên",
+        "Đổi mới và sáng tạo trong giảng dạy",
+        "Trách nhiệm và uy tín"
       ]
     },
-    "testimonials": {
-      "title": "PHẢN HỒI TỪ PHỤ HUYNH",
-      "testimonialsList": [
-        {
-          "name": "Bé Nguyễn Minh Khôi",
-          "image": "images/parent/parent.jpg",
-          "experience": "+5 năm đồng hành",
-          "content": "Con tôi đã có sự tiến bộ vượt bậc về khả năng giao tiếp tiếng Anh sau 2 khóa học tại trung tâm."
-        },
-        {
-          "name": "Bé Trần Minh Anh",
-          "image": "images/parent/parent.jpg",
-          "experience": "+3 năm đồng hành",
-          "content": "Phương pháp giảng dạy tại trung tâm rất phù hợp với con tôi, giúp con hứng thú học tiếng Anh hơn."
-        },
-        {
-          "name": "Bé Nguyễn Tất Minh Phương",
-          "image": "images/parent/parent.jpg",
-          "experience": "+12 năm đồng hành",
-          "content": "Gia đình rất yên tâm vì bé được tương tác nhiều với giáo viên và bạn bè qua các hoạt động vừa học vừa chơi."
-        },
-        {
-          "name": "Bé Nguyễn Tất Minh Khánh",
-          "image": "images/parent/parent.jpg",
-          "experience": "+12 năm đồng hành",
-          "content": "Gia đình rất yên tâm vì bé được tương tác nhiều với giáo viên và bạn bè qua các hoạt động vừa học vừa chơi."
-        }
+    "faculty": {
+      "title": "Đội ngũ giảng viên",
+      "description": "Đội ngũ giảng viên có trình độ, chuyên môn cao; chứng chỉ TESOL, CELTA, IELTS Trainer; phong cách giảng dạy chuyên nghiệp, hiện đại."
+    },
+    "facilities": {
+      "title": "Cơ sở vật chất",
+      "description": "Phòng học trang bị máy lạnh, màn chiếu, TV; không gian học tập thân thiện, hiện đại.",
+      "images": [
+        "images/about/school.jpg",
+        "images/activities/activity1.jpg",
+        "images/activities/activity2.jpg"
+      ]
+    },
+    "philosophy": {
+      "title": "Khẩu hiệu / Triết lý giáo dục",
+      "content": "Học tiếng Anh không chỉ là học ngôn ngữ, mà còn là mở rộng thế giới."
+    }
+  },
+  "aboutUsPage": {
+    "introduction": {
+      "title": "Giới thiệu về trung Tâm Ngoại Ngữ Việt Anh Quốc",
+      "content": [
+        "Trung Tâm Ngoại Ngữ Việt Anh Quốc tự hào là điểm đến tin cậy cho việc học tiếng Anh tại TP. Hồ Chí Minh. Với đội ngũ giáo viên giàu kinh nghiệm và phương pháp giảng dạy hiện đại, chúng tôi cam kết mang đến môi trường học tập thân thiện, hiệu quả, giúp học viên mọi lứa tuổi tự tin sử dụng tiếng Anh trong học tập, công việc và cuộc sống",
+        "Trung Tâm Ngoại Ngữ Việt Anh Quốc được thành lập với sứ mệnh trở thành đơn vị đào tạo tiếng Anh uy tín, chất lượng hàng đầu tại khu vực phía Nam. Chúng tôi chuyên cung cấp các khóa học đa dạng, phù hợp với học viên từ mẫu giáo đến người lớn, bao gồm: tiếng Anh giao tiếp, luyện thi IELTS, Cambridge và các chương trình phát triển kỹ năng ngôn ngữ toàn diện.",
+        "Đội ngũ giáo viên của trung tâm gồm những Giáo viên có trình độ cao, nhiệt huyết và tận tâm trong việc giảng dạy. Với phương pháp hiện đại kết hợp công nghệ giáo dục tiên tiến, chúng tôi tạo ra môi trường học tập sáng tạo, giúp học viên tiếp thu kiến thức một cách tự nhiên và hiệu quả.",
+        "Ngoài ra, Trung Tâm Ngoại Ngữ Việt Anh Quốc luôn chú trọng đến việc xây dựng văn hóa học tập tích cực, hỗ trợ từng học viên phát triển toàn diện cả về kiến thức lẫn kỹ năng mềm cần thiết trong kỷ nguyên toàn cầu hóa.",
+        "Trung Tâm Ngoại Ngữ Việt Anh Quốc Khởi nguồn từ niềm đam mê giảng dạy và mong muốn mang lại cơ hội học tiếng Anh chất lượng cho các em học sinh, Trung Tâm Ngoại Ngữ Việt Anh Quốc đã được thành lập và không ngừng phát triển suốt nhiều năm qua. Chúng tôi hiểu rằng mỗi học sinh là một câu chuyện riêng, một hành trình học tập và khám phá tiếng Anh khác biệt.",
+        "Tại Việt Anh Quốc, chúng tôi không chỉ dạy ngôn ngữ mà còn truyền cảm hứng, khơi dậy niềm yêu thích học tiếng Anh và sự tự tin giao tiếp. Mỗi bước tiến của học viên chính là thành công lớn nhất của chúng tôi."
       ]
     }
+  },
+  "news": [
+    {
+      "id": 1,
+      "title": "Tài liệu học tập tháng 5",
+      "description": "Tổng hợp tài liệu học tập và bài tập bổ trợ cho các khóa học trong tháng 5.",
+      "file": "/docs/tai-lieu-thang-5.pdf"
+    },
+    {
+      "id": 2,
+      "title": "Đề thi thử IELTS",
+      "description": "Bộ đề thi thử IELTS mới nhất được cập nhật, giúp học viên làm quen với cấu trúc đề thi và tự đánh giá năng lực.",
+      "file": "/docs/de-thi-thu-ielts.pdf"
+    }
+  ],
+  "gallery": {
+    "title": "Hình ảnh",
+    "images": [
+      "images/activities/activity1.jpg",
+      "images/activities/activity2.jpg",
+      "images/activities/activity3.jpg",
+      "images/activities/activity4.jpg",
+      "images/activities/activity5.jpg",
+      "images/activities/activity6.jpg",
+      "images/activities/activity7.jpg",
+      "images/activities/activity8.jpg"
+    ]
   },
   "activities": [
     {
@@ -233,19 +241,19 @@
       "description": "Chương trình trại hè tiếng Anh kéo dài 2 tuần với nhiều hoạt động thú vị, giúp học sinh rèn luyện kỹ năng giao tiếp và phát triển tư duy sáng tạo.",
       "images": [
         "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg"
+        "images/activities/activity2.jpg",
+        "images/activities/activity3.jpg",
+        "images/activities/activity4.jpg",
+        "images/activities/activity5.jpg",
+        "images/activities/activity6.jpg",
+        "images/activities/activity7.jpg",
+        "images/activities/activity8.jpg",
+        "images/activities/activity2.jpg",
+        "images/activities/activity3.jpg",
+        "images/activities/activity4.jpg",
+        "images/activities/activity5.jpg",
+        "images/activities/activity6.jpg",
+        "images/activities/activity7.jpg"
       ]
     },
     {
@@ -254,19 +262,19 @@
       "description": "Cuộc thi thường niên giúp học sinh phát triển kỹ năng thuyết trình và tự tin nói tiếng Anh trước đám đông. Học sinh được chuẩn bị kỹ lưỡng và nhận được sự hướng dẫn từ các giáo viên giàu kinh nghiệm.",
       "images": [
         "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg"
+        "images/activities/activity2.jpg",
+        "images/activities/activity3.jpg",
+        "images/activities/activity4.jpg",
+        "images/activities/activity5.jpg",
+        "images/activities/activity6.jpg",
+        "images/activities/activity7.jpg",
+        "images/activities/activity8.jpg",
+        "images/activities/activity2.jpg",
+        "images/activities/activity3.jpg",
+        "images/activities/activity4.jpg",
+        "images/activities/activity5.jpg",
+        "images/activities/activity6.jpg",
+        "images/activities/activity7.jpg"
       ]
     },
     {
@@ -275,19 +283,19 @@
       "description": "Học sinh được tìm hiểu về văn hóa các nước nói tiếng Anh thông qua các hoạt động trải nghiệm thực tế, trò chơi và ẩm thực đặc trưng. Đây là cơ hội tuyệt vời để học sinh mở rộng kiến thức và giao lưu văn hóa.",
       "images": [
         "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg",
-        "images/activities/activity1.jpg"
+        "images/activities/activity2.jpg",
+        "images/activities/activity3.jpg",
+        "images/activities/activity4.jpg",
+        "images/activities/activity5.jpg",
+        "images/activities/activity6.jpg",
+        "images/activities/activity7.jpg",
+        "images/activities/activity8.jpg",
+        "images/activities/activity2.jpg",
+        "images/activities/activity3.jpg",
+        "images/activities/activity4.jpg",
+        "images/activities/activity5.jpg",
+        "images/activities/activity6.jpg",
+        "images/activities/activity7.jpg"
       ]
     }
   ],
@@ -357,7 +365,7 @@
     "address": "Lô E2-12, Đường C, Dự án phát triển Đông A, Đường Trần Thị Vững, Phường Dĩ An, Thành phố Hồ Chí Minh, Việt Nam",
     "address_alt": "E2-12, ĐƯỜNG C, KDC HIM LAM PHÚ ĐÔNG, PHƯỜNG AN BÌNH, TP. DĨ AN, TỈNH BÌNH DƯƠNG",
     "phone": "0913968338",
-    "email": "Vietanhquoc@gmail.com",
+    "email": "linhvietanhquoc@gmail.com",
     "socials": {
       "facebook": "https://facebook.com/NNVietAnhQuoc/",
       "zalo": "https://zalo.me/NNVietAnhQuoc"

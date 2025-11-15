@@ -1,12 +1,16 @@
 <template>
   <div class="activities-page">
-    <div class="page-header">
-      <h1>Hoạt động nổi bật</h1>
-      <p>Khám phá các hoạt động thú vị tại Ngoại ngữ Việt Anh Quốc</p>
-    </div>
+    <section class="hero">
+      <div class="decor-shapes"></div>
+      <div class="hero-inner reveal">
+        <h1>Hoạt động nổi bật</h1>
+        <p>Khám phá các hoạt động thú vị tại Ngoại ngữ Việt Anh Quốc</p>
+      </div>
+      <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C240,128 480,0 720,64 C960,128 1200,16 1440,64 L1440,120 L0,120 Z" fill="#ffffff"/></svg>
+    </section>
     
     <div class="activities-container">
-      <div v-for="activity in activities" :key="activity.id" class="activity-card">
+      <div v-for="activity in activities" :key="activity.id" class="activity-card reveal">
         <h2 class="activity-title">{{ activity.title }}</h2>
         <p class="activity-description">{{ activity.description }}</p>
         
@@ -194,9 +198,14 @@ const nextPage = (activityId) => {
 
 onMounted(async () => {
   try {
-    const response = await fetch(`${baseUrl.value}data.json`)
-    const data = await response.json()
-    activities.value = data.activities || []
+    const g = typeof window !== 'undefined' ? window.APP_DATA : null
+    if (g && g.activities) {
+      activities.value = g.activities
+    } else {
+      const response = await fetch(`${baseUrl.value}data.json`)
+      const data = await response.json()
+      activities.value = data.activities || []
+    }
     
     // Khởi tạo trang đầu tiên cho mỗi hoạt động
     activities.value.forEach(activity => {
@@ -209,17 +218,17 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.activities-page {
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+.activities-page { background: #ffffff; }
 
-.page-header {
-  text-align: center;
-  margin-bottom: 3rem;
-  color: #24478f;
-}
+.hero { position: relative; background: linear-gradient(45deg, var(--blue-900) 0%, var(--blue-accent) 100%); padding: 100px 20px 60px; text-align: center; overflow: hidden; }
+.hero-inner h1 { font-size: 3rem; color: #fff; }
+.hero-inner p { color: #FFDD80; margin-top: 8px; }
+.decor-shapes { position: absolute; inset: 0; background-image: radial-gradient(rgba(255,184,0,0.2) 2px, transparent 2px), radial-gradient(rgba(255,184,0,0.1) 2px, transparent 2px); background-size: 40px 40px, 80px 80px; background-position: 0 0, 20px 20px; pointer-events: none; }
+.wave { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 80px; }
+
+.activities-container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; display: flex; flex-direction: column; gap: 3rem; }
+
+.page-header { display: none; }
 
 .page-header h1 {
   font-size: 2.5rem;

@@ -13,7 +13,7 @@
     
     <nav :class="{ 'active': menuActive }">
       <ul>
-        <li v-for="(item, i) in header.menu" :key="i">
+        <li v-for="(item, i) in header.menu.filter(m => m.active !== false)" :key="i">
           <router-link v-if="item.link.startsWith('/')" :to="item.link" @click="closeMenu">{{ item.label }}</router-link>
           <a v-else :href="item.link" @click="closeMenu">{{ item.label }}</a>
         </li>
@@ -75,7 +75,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: white;
+  background-color: var(--primary-blue);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 100;
@@ -107,14 +107,14 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #1a4b8c;
+  color: #ffffff;
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: color 0.3s, transform 0.2s;
 }
 
 nav a:hover {
-  color: #3a7bd5;
+  color: var(--accent-yellow);
   transform: translateY(-2px);
 }
 
@@ -128,7 +128,7 @@ nav a:hover {
 .bar {
   width: 25px;
   height: 3px;
-  background-color: #24478f;
+  background-color: #ffffff;
   margin: 3px 0;
   transition: 0.4s;
 }
@@ -155,7 +155,7 @@ nav a:hover {
 }
 
 .cta-button {
-  background-color: #ff5252;
+  background-color: var(--accent-red);
   color: white;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -167,7 +167,7 @@ nav a:hover {
 }
 
 .cta-button:hover {
-  background-color: #e03e3e;
+  background-color: #dc2626;
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(255, 82, 82, 0.4);
 }
@@ -259,7 +259,7 @@ nav a:hover {
     right: -100%;
     width: 80%;
     height: 100vh;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     flex-direction: column;
     padding: 100px 2rem 2rem;
     transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -287,6 +287,7 @@ nav a:hover {
     font-size: 1.2rem;
     display: block;
     padding: 0.5rem 0;
+    color: var(--blue-900);
   }
   
   .fixed-cta {

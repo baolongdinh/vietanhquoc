@@ -69,19 +69,44 @@ const filteredTeachers = computed(() => {
 
 onMounted(async () => {
   try {
-    const response = await fetch('./data.json')
+    const base = process.env.VUE_APP_BASE_URL || '/'
+    const response = await fetch(`${base}data.json`)
     const data = await response.json()
     teachers.value = data.teachers
   } catch (error) {
     console.error('Error loading teachers data:', error)
   }
+
+  const animateCount = (el) => {
+    const text = el.textContent.trim()
+    const target = parseInt(text.replace(/[^0-9]/g, '')) || 0
+    let current = 0
+    const step = Math.max(1, Math.floor(target / 60))
+    const tick = () => {
+      current = Math.min(target, current + step)
+      el.textContent = text.includes('%') ? `${current}%` : (text.includes('+') ? `${current}+` : `${current}`)
+      if (current < target) requestAnimationFrame(tick)
+    }
+    requestAnimationFrame(tick)
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCount(entry.target)
+        observer.unobserve(entry.target)
+      }
+    })
+  }, { threshold: 0.6 })
+
+  document.querySelectorAll('.stat-number').forEach(el => observer.observe(el))
 })
 </script>
 
 <style scoped>
 .teachers-page {
   padding: 60px 0;
-  background-color: #f8f9fa;
+  background-color: var(--blue-50);
 }
 
 .container {
@@ -97,13 +122,13 @@ onMounted(async () => {
 
 .page-header h1 {
   font-size: 2.5rem;
-  color: #333;
+  color: var(--blue-700);
   margin-bottom: 10px;
 }
 
 .subtitle {
   font-size: 1.2rem;
-  color: #666;
+  color: var(--text-dark);
   max-width: 700px;
   margin: 0 auto;
 }
@@ -116,9 +141,9 @@ onMounted(async () => {
 }
 
 .teacher-filters button {
-  background: none;
-  border: 2px solid #3498db;
-  color: #3498db;
+  background: transparent;
+  border: 2px solid var(--blue-900);
+  color: var(--blue-900);
   padding: 10px 20px;
   margin: 0 10px 10px;
   border-radius: 30px;
@@ -129,8 +154,10 @@ onMounted(async () => {
 
 .teacher-filters button.active,
 .teacher-filters button:hover {
-  background-color: #3498db;
+  background-color: var(--blue-900);
   color: white;
+  box-shadow: 0 0 0 4px rgba(0,61,130,0.15);
+  transform: scale(1.05);
 }
 
 .teacher-stats {
@@ -148,8 +175,11 @@ onMounted(async () => {
 
 .stat-number {
   font-size: 2.5rem;
-  font-weight: bold;
-  color: #e74c3c;
+  font-weight: 800;
+  background: linear-gradient(90deg, var(--blue-500), var(--blue-900));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   margin-bottom: 10px;
 }
 
