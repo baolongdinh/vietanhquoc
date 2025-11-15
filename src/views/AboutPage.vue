@@ -54,7 +54,7 @@
         </div>
         <div class="split-image fade-up">
           <div class="frame">
-            <img src="/images/student/student.jpg" alt="Students" />
+            <img :src="`${baseUrl}images/teacher/giang-vien.png`" alt="Teacher" />
           </div>
         </div>
       </div>
@@ -65,7 +65,7 @@
         <h2 class="section-title">{{ aboutPage.facilities.title }}</h2>
         <p class="section-desc">{{ aboutPage.facilities.description }}</p>
         <div class="gallery">
-          <img v-for="(img, idx) in aboutPage.facilities.images" :key="idx" :src="`/${img}`" alt="Facility" class="gallery-item fade-up" />
+          <img v-for="(img, idx) in aboutPage.facilities.images" :key="idx" :src="`${baseUrl}${img}`" alt="Facility" class="gallery-item fade-up" />
         </div>
       </div>
     </section>
@@ -106,6 +106,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 
+const baseUrl = process.env.VUE_APP_BASE_URL || '/'
 const aboutPage = ref({
   introduction: { title: '', content: [] },
   missionVision: { title: '', mission: '', vision: '', coreValues: [] },
