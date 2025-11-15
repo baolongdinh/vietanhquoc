@@ -256,18 +256,21 @@ nav a:hover {
   nav {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: 0;
     width: 80%;
     height: 100vh;
     background-color: #ffffff;
     flex-direction: column;
     padding: 100px 2rem 2rem;
-    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    will-change: transform;
+    overflow-y: auto;
   }
   
   nav.active {
-    right: 0;
+    transform: translateX(0);
   }
   
   nav ul {

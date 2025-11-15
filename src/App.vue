@@ -16,8 +16,6 @@
     <div v-else class="loading">
       <p>Đang tải dữ liệu...</p>
     </div>
-
-    <div class="quality-badge">Cam kết chất lượng</div>
   </div>
 </template>
 

@@ -297,6 +297,45 @@ const accent = (i) => ['red', 'yellow', 'green'][i % 3]
 .timeline-item:nth-child(even) .timeline-card { border-left-color: var(--accent-red); }
 .timeline-card:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(0, 61, 130, 0.2); }
 
+/* Mobile layout cho timeline */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 0;
+  }
+  
+  .timeline:before {
+    left: 20px;
+    transform: translateX(0);
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 44px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    margin-right: 0;
+    margin-left: 0;
+    padding-right: 0;
+    padding-left: 44px;
+  }
+  
+  .timeline-item .dot {
+    left: 20px;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-card {
+    border-left-width: 4px;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
+
+
 .timeline-card p,
 .mv-card p,
 .split-text p,
