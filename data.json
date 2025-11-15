@@ -4,35 +4,48 @@
     "menu": [
       {
         "label": "Trang chủ",
-        "link": "/"
+        "link": "/",
+        "active": true
       },
       {
         "label": "Giới thiệu",
-        "link": "/about"
+        "link": "/about",
+        "active": true
       },
       {
         "label": "Khóa Học",
-        "link": "/courses"
+        "link": "/courses",
+        "active": true
+      },
+      {
+        "label": "Lịch học",
+        "link": "/schedule",
+        "active": false
       },
       {
         "label": "Tin tức",
-        "link": "/news"
+        "link": "/news",
+        "active": true
       },
       {
         "label": "Hoạt động",
-        "link": "/activities"
+        "link": "/activities",
+        "active": true
       },
       {
         "label": "Về chúng tôi",
-        "link": "/about-us"
+        "link": "/about-us",
+        "active": true
       },
       {
         "label": "Hình ảnh",
-        "link": "/gallery"
+        "link": "/gallery",
+        "active": true
       },
       {
         "label": "Liên hệ",
-        "link": "/contact"
+        "link": "/contact",
+        "active": true
       }
     ],
     "cta": {
