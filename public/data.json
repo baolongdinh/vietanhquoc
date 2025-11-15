@@ -210,15 +210,21 @@
   "news": [
     {
       "id": 1,
-      "title": "Tài liệu học tập tháng 5",
-      "description": "Tổng hợp tài liệu học tập và bài tập bổ trợ cho các khóa học trong tháng 5.",
-      "file": "/docs/tai-lieu-thang-5.pdf"
+      "title": "TỜ TRÌNH",
+      "description": "V/v thay đổi các quyết định đối với Trung Tâm Ngoại Ngữ",
+      "file": "docs/new1.pdf"
     },
     {
       "id": 2,
-      "title": "Đề thi thử IELTS",
-      "description": "Bộ đề thi thử IELTS mới nhất được cập nhật, giúp học viên làm quen với cấu trúc đề thi và tự đánh giá năng lực.",
-      "file": "/docs/de-thi-thu-ielts.pdf"
+      "title": "Hướng dẫn tổ chức hoạt động giáo dục cho Trung tâm ngoại ngữ, tin học",
+      "description": "Quy định về tổ chức hoạt động giáo dục sau khi được cấp phép trên địa bàn Thành phố",
+      "file": "docs/new2.pdf"
+    },
+    {
+      "id": 3,
+      "title": "Chuyển đổi đơn vị quản lý các trung tâm ngoại ngữ, tin học",
+      "description": "Chuyển từ Sở GD&ĐT các tỉnh về trực thuộc Sở GD&ĐT TP. Hồ Chí Minh - Đợt 3",
+      "file": "docs/new3.pdf"
     }
   ],
   "gallery": {

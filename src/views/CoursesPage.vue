@@ -198,26 +198,26 @@ onMounted(async () => {
 
 <style scoped>
 .courses-page {
-  padding-top: 0; /* Bỏ padding top */
+  padding-top: 0;
   background-color: #F8FBFF;
 }
 
-/* Hero Section */
+/* Hero Section - ĐIỀU CHỈNH CHO GIỐNG ABOUT PAGE */
 .courses-hero {
   position: relative;
-  height: 50vh;
-  min-height: 400px;
-  background: linear-gradient(135deg, #003D82 0%, #4A9FE7 100%);
+  background: linear-gradient(45deg, var(--blue-900) 0%, var(--blue-accent) 100%);
+  padding: 140px 30px 80px; 
+  text-align: center;
   overflow: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 0; /* BỎ margin-bottom 60px */
 }
 
 .decor-shapes {
   position: absolute;
   inset: 0;
   background-image: 
-    radial-gradient(circle, rgba(255,184,0,0.15) 2px, transparent 2px),
-    radial-gradient(circle, rgba(255,184,0,0.08) 2px, transparent 2px);
+    radial-gradient(rgba(255,184,0,0.2) 2px, transparent 2px),
+    radial-gradient(rgba(255,184,0,0.1) 2px, transparent 2px);
   background-size: 40px 40px, 80px 80px;
   background-position: 0 0, 20px 20px;
   pointer-events: none;
@@ -226,29 +226,22 @@ onMounted(async () => {
 .hero-content {
   position: relative;
   z-index: 1;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  padding: 0 20px;
+  /* BỎ height: 100%, display: flex, justify-content: center */
 }
 
 .hero-content h1 {
-  font-size: 3.5rem;
+  font-size: 3.2rem; /* GIỐNG ABOUT: 3.2rem thay vì 3.5rem */
   font-weight: 800;
-  margin: 0 0 16px 0;
+  margin: 0 0 10px 0; /* GIẢM margin-bottom từ 16px xuống 10px */
   text-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  color: white !important; 
+  color: #ffffff !important;
 }
 
 .breadcrumb {
-  font-size: 1.3rem;
+  font-size: 1.15rem; /* GIẢM từ 1.3rem xuống 1.15rem */
   color: #FFDD80;
-  margin: 0;
-  font-weight: 500;
+  margin: 10px 0 0 0; /* THÊM margin-top */
+  font-weight: 400; /* GIẢM từ 500 xuống 400 */
 }
 
 .scroll-indicator {
@@ -271,9 +264,9 @@ onMounted(async () => {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -1px;
+  bottom: 0;
   width: 100%;
-  height: 100px;
+  height: 80px; /* GIỐNG ABOUT */
 }
 
 /* Container */
@@ -288,7 +281,7 @@ onMounted(async () => {
   display: flex;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 48px;
+  margin: 60px 0 48px 0; /* THÊM margin-top 60px để cách hero */
   flex-wrap: wrap;
 }
 
@@ -327,12 +320,20 @@ onMounted(async () => {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .courses-hero {
+    padding: 80px 20px 50px; /* GIẢM padding trên mobile */
+  }
+  
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2.4rem; /* GIỐNG ABOUT: 2.4rem */
   }
   
   .breadcrumb {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+  }
+  
+  .course-filters {
+    margin: 40px 0 32px 0; /* GIẢM margin trên mobile */
   }
   
   .courses-grid {
@@ -347,11 +348,6 @@ onMounted(async () => {
   .course-filters button {
     padding: 12px 20px;
     font-size: 0.9rem;
-  }
-  
-  .courses-hero {
-    height: 40vh;
-    min-height: 300px;
   }
 }
 
