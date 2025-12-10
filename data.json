@@ -67,11 +67,11 @@
     {
       "id": 1,
       "level": "Pre-A1 - A1",
-      "name": "Tiếng Anh Mầm Non Vui Nhộn",
+      "name": "Tiếng Anh Mầm Non",
       "hours": 48,
       "desc": "Giúp trẻ làm quen với tiếng Anh qua bài hát, trò chơi, hình ảnh sinh động. Phát triển kỹ năng nghe và nói tự nhiên, tăng phản xạ ngôn ngữ.",
       "age_range": "3-6 tuổi",
-      "price": 3500000,
+      "price": 850000,
       "schedule": "2 buổi/tuần, mỗi buổi 1 giờ 30 phút",
       "objectives": [
         "Giúp trẻ làm quen với tiếng Anh qua bài hát, trò chơi, hình ảnh sinh động",
@@ -94,11 +94,11 @@
     {
       "id": 2,
       "level": "A1+ - A2+ (Starters, Movers)",
-      "name": "Tiếng Anh Thiếu Nhi – Chuẩn Cambridge",
+      "name": "Tiếng Anh Thiếu Nhi",
       "hours": 48,
       "desc": "Phát triển đầy đủ 4 kỹ năng: nghe – nói – đọc – viết. Giúp học viên đạt chuẩn đầu ra Cambridge Starters, Movers.",
       "age_range": "7-11 tuổi",
-      "price": 4200000,
+      "price": 850000,
       "schedule": "2 buổi/tuần, mỗi buổi 1 giờ 30 phút",
       "objectives": [
         "Phát triển đầy đủ 4 kỹ năng: nghe – nói – đọc – viết",
@@ -121,11 +121,11 @@
     {
       "id": 3,
       "level": "A2+ - B1 (KET, PET)",
-      "name": "Tiếng Anh Thiếu Niên – Luyện thi Cambridge KET, PET",
+      "name": "Tiếng Anh Thiếu Niên",
       "hours": 60,
       "desc": "Nâng cao kỹ năng học thuật và giao tiếp. Chuẩn bị thi chứng chỉ Cambridge KET, PET. Phát triển kỹ năng viết luận và thuyết trình.",
       "age_range": "12-16 tuổi",
-      "price": 4800000,
+      "price": 850000,
       "schedule": "3-4 buổi/tuần, mỗi buổi 2 giờ",
       "objectives": [
         "Nâng cao kỹ năng học thuật và giao tiếp",
