@@ -166,19 +166,34 @@ const accent = (i) => ['red', 'yellow', 'green'][i % 3]
 .hero {
   position: relative;
   background: linear-gradient(45deg, var(--blue-900) 0%, var(--blue-accent) 100%);
-  padding: 100px 20px 60px;
+  padding: 80px 20px;
   text-align: center;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  max-width: 900px;
 }
 
 .hero-inner h1 {
-  font-size: 3.2rem;
+  font-size: 3.8rem;
   color: #ffffff;
+  margin: 0;
 }
 
 .hero-inner p {
   color: #FFDD80;
-  margin-top: 10px;
+  margin: 0;
+  font-size: 1.1rem;
 }
 
 .decor-shapes {
@@ -517,7 +532,7 @@ const accent = (i) => ['red', 'yellow', 'green'][i % 3]
 }
 
 @media (max-width: 768px) {
-  .hero-inner h1 { font-size: 2.4rem; }
+  .hero-inner h1 { font-size: 2.6rem; }
   .section { padding: 40px 16px; }
   .split { grid-template-columns: 1fr; }
   .section-title { font-size: 1.8rem; }

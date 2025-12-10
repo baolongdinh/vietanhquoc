@@ -206,10 +206,14 @@ onMounted(async () => {
 .courses-hero {
   position: relative;
   background: linear-gradient(45deg, var(--blue-900) 0%, var(--blue-accent) 100%);
-  padding: 140px 30px 80px; 
+  padding: 80px 30px; 
   text-align: center;
   overflow: hidden;
   margin-bottom: 0; /* BỎ margin-bottom 60px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
 }
 
 .decor-shapes {
@@ -226,21 +230,26 @@ onMounted(async () => {
 .hero-content {
   position: relative;
   z-index: 1;
-  /* BỎ height: 100%, display: flex, justify-content: center */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  max-width: 900px;
 }
 
 .hero-content h1 {
-  font-size: 3.2rem; /* GIỐNG ABOUT: 3.2rem thay vì 3.5rem */
+  font-size: 3.8rem; /* Tăng lên 3.8rem để khớp với About page */
   font-weight: 800;
-  margin: 0 0 10px 0; /* GIẢM margin-bottom từ 16px xuống 10px */
+  margin: 0;
   text-shadow: 0 2px 8px rgba(0,0,0,0.1);
   color: #ffffff !important;
 }
 
 .breadcrumb {
-  font-size: 1.15rem; /* GIẢM từ 1.3rem xuống 1.15rem */
+  font-size: 1.1rem; /* GIẢM từ 1.3rem xuống 1.15rem */
   color: #FFDD80;
-  margin: 10px 0 0 0; /* THÊM margin-top */
+  margin: 0; /* THÊM margin-top */
   font-weight: 400; /* GIẢM từ 500 xuống 400 */
 }
 
@@ -321,11 +330,11 @@ onMounted(async () => {
 /* Responsive */
 @media (max-width: 768px) {
   .courses-hero {
-    padding: 80px 20px 50px; /* GIẢM padding trên mobile */
+    padding: 60px 20px 40px; /* GIẢM padding trên mobile */
   }
   
   .hero-content h1 {
-    font-size: 2.4rem; /* GIỐNG ABOUT: 2.4rem */
+    font-size: 2.6rem; /* Tăng lên 2.6rem để khớp với About page */
   }
   
   .breadcrumb {

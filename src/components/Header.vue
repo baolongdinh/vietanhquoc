@@ -74,7 +74,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
   background-color: var(--primary-blue);
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -82,7 +82,7 @@ header {
 }
 
 .logo {
-  height: 80px;
+  height: 120px;
   max-width: 100%;
   object-fit: contain;
 }

@@ -48,9 +48,10 @@ onMounted(async () => {
 <style scoped>
 .about-us-page { background: #ffffff; }
 
-.hero { position: relative; background: linear-gradient(45deg, var(--blue-900) 0%, var(--blue-accent) 100%); padding: 100px 20px 60px; text-align: center; overflow: hidden; }
-.hero-inner h1 { font-size: 3rem; color: #fff; }
-.hero-inner p { color: #FFDD80; margin-top: 8px; }
+.hero { position: relative; background: linear-gradient(45deg, var(--blue-900) 0%, var(--blue-accent) 100%); padding: 80px 20px; text-align: center; overflow: hidden; display: flex; align-items: center; justify-content: center; min-height: 300px; }
+.hero-inner { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.8rem; max-width: 900px; }
+.hero-inner h1 { font-size: 3.8rem; color: #fff; margin: 0; }
+.hero-inner p { color: #FFDD80; margin: 0; font-size: 1.1rem; }
 .decor-shapes { position: absolute; inset: 0; background-image: radial-gradient(rgba(255,184,0,0.2) 2px, transparent 2px), radial-gradient(rgba(255,184,0,0.1) 2px, transparent 2px); background-size: 40px 40px, 80px 80px; background-position: 0 0, 20px 20px; pointer-events: none; }
 .wave { position: absolute; left: 0; right: 0; bottom: 0; width: 100%; height: 80px; }
 

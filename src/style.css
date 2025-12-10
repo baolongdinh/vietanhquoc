@@ -1,20 +1,30 @@
-
 /* --- Biến màu và cài đặt chung --- */
 :root {
   /* Blues (brand) */
-  --blue-900: #003D82; /* xanh đậm */
-  --blue-700: #003D82; /* điểm nhấn tiêu đề */
-  --blue-600: #003D82; /* xanh chủ đạo */
-  --blue-500: #4A9FE7; /* xanh sáng nhấn */
-  --blue-100: #E8F4FA; /* xanh nhạt */
-  --blue-50: #E8F4FA; /* nền xanh rất nhạt */
-  --blue-accent: #4A9FE7; /* dùng cho gradient hero */
+  --blue-900: #003D82;
+  /* xanh đậm */
+  --blue-700: #003D82;
+  /* điểm nhấn tiêu đề */
+  --blue-600: #003D82;
+  /* xanh chủ đạo */
+  --blue-500: #4A9FE7;
+  /* xanh sáng nhấn */
+  --blue-100: #E8F4FA;
+  /* xanh nhạt */
+  --blue-50: #E8F4FA;
+  /* nền xanh rất nhạt */
+  --blue-accent: #4A9FE7;
+  /* dùng cho gradient hero */
 
   /* Accents (brand) */
-  --accent-yellow: #FFB800; /* vàng */
-  --accent-red: #E63946; /* đỏ */
-  --accent-green: #4CAF50; /* xanh lá nhấn */
-  --accent-orange: #FFB800; /* alias vàng */
+  --accent-yellow: #FFB800;
+  /* vàng */
+  --accent-red: #E63946;
+  /* đỏ */
+  --accent-green: #4CAF50;
+  /* xanh lá nhấn */
+  --accent-orange: #FFB800;
+  /* alias vàng */
 
   /* Legacy aliases for compatibility */
   --primary-blue: var(--blue-900);
@@ -36,14 +46,38 @@ body {
   background-color: #fff;
 }
 
-html, body { overflow-x: hidden; }
+html,
+body {
+  overflow-x: hidden;
+}
 
 /* Scroll reveal utility */
-.reveal { opacity: 0; transform: translateY(12px); }
-.reveal.in-view { animation: fadeUpGlobal 0.6s ease both; }
-@keyframes fadeUpGlobal { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+.reveal {
+  opacity: 0;
+  transform: translateY(12px);
+}
 
-h1, h2, h4, h5, h6 {
+.reveal.in-view {
+  animation: fadeUpGlobal 0.6s ease both;
+}
+
+@keyframes fadeUpGlobal {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1,
+h2,
+h4,
+h5,
+h6 {
   color: var(--primary-blue);
   font-weight: 700;
 }
@@ -108,14 +142,38 @@ a:hover {
   transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
 
-.btn-primary { background-color: var(--blue-600); color: #fff; }
-.btn-primary:hover { background-color: var(--blue-700); transform: translateY(-1px); box-shadow: 0 6px 12px rgba(11,42,111,0.2); }
+.btn-primary {
+  background-color: var(--blue-600);
+  color: #fff;
+}
 
-.btn-secondary { background-color: var(--accent-yellow); color: #111827; }
-.btn-secondary:hover { background-color: #ffca28; transform: translateY(-1px); box-shadow: 0 6px 12px rgba(11,42,111,0.2); }
+.btn-primary:hover {
+  background-color: var(--blue-700);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(11, 42, 111, 0.2);
+}
 
-.btn-cta { background-color: var(--accent-red); color: #fff; }
-.btn-cta:hover { background-color: #dc2626; transform: translateY(-1px); box-shadow: 0 6px 12px rgba(11,42,111,0.2); }
+.btn-secondary {
+  background-color: var(--accent-yellow);
+  color: #111827;
+}
+
+.btn-secondary:hover {
+  background-color: #ffca28;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(11, 42, 111, 0.2);
+}
+
+.btn-cta {
+  background-color: var(--accent-red);
+  color: #fff;
+}
+
+.btn-cta:hover {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(11, 42, 111, 0.2);
+}
 
 
 /* --- Header --- */
@@ -125,7 +183,7 @@ header {
   align-items: center;
   padding: 15px 40px;
   background-color: #fff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -152,9 +210,9 @@ header nav ul li a {
 /* --- Hero Section --- */
 .hero-section {
   height: 80vh;
-  border-radius: 32px;      
+  border-radius: 32px;
   margin: 0 64px;
-  margin-top: 12px;          
+  margin-top: 12px;
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -172,7 +230,8 @@ header nav ul li a {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(10, 40, 111, 0.65); /* dựa trên blue-900 */
+  background-color: rgba(10, 40, 111, 0.25);
+  /* dựa trên blue-900 - giảm từ 0.65 xuống 0.25 để ảnh sáng hơn */
 }
 
 .hero-section .hero-content {
@@ -217,13 +276,13 @@ header nav ul li a {
   border: 1px solid var(--border-color);
   border-radius: 10px;
   padding: 25px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .course-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .course-card .level {
@@ -261,7 +320,7 @@ header nav ul li a {
   flex: 1;
   max-width: 50%;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .about-section .text-content {
@@ -269,8 +328,8 @@ header nav ul li a {
 }
 
 .about-section h2 {
-    font-size: 2rem;
-    margin-top: 0;
+  font-size: 2rem;
+  margin-top: 0;
 }
 
 .about-section .highlights {
@@ -333,26 +392,31 @@ footer .copyright {
 /* --- Teachers Section --- */
 .teachers-section {
   background-color: var(--light-gray);
-  padding-bottom: 60px; /* Tăng padding dưới để carousel pagination không bị cắt */
+  padding-bottom: 60px;
+  /* Tăng padding dưới để carousel pagination không bị cắt */
 }
 
 .teacher-card-wrapper {
-  position: relative; /* Quan trọng để positioning experience tag */
+  position: relative;
+  /* Quan trọng để positioning experience tag */
   background-color: #fff;
   border: 2px solid var(--primary-blue);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin: 10px; /* Thêm margin để card không dính vào nhau trong carousel */
+  margin: 10px;
+  /* Thêm margin để card không dính vào nhau trong carousel */
 }
 
 .teacher-image-container {
   position: relative;
   width: 100%;
-  padding-top: 100%; /* Để container có dạng hình vuông */
+  padding-top: 100%;
+  /* Để container có dạng hình vuông */
   overflow: hidden;
-  background-color: #f0f8ff; /* Màu nền nhẹ cho vùng ảnh */
+  background-color: #f0f8ff;
+  /* Màu nền nhẹ cho vùng ảnh */
 }
 
 .teacher-card-wrapper img {
@@ -361,8 +425,10 @@ footer .copyright {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Đảm bảo ảnh cover toàn bộ vùng */
-  object-position: top center; /* Giữ khuôn mặt ở giữa */
+  object-fit: cover;
+  /* Đảm bảo ảnh cover toàn bộ vùng */
+  object-position: top center;
+  /* Giữ khuôn mặt ở giữa */
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -370,7 +436,8 @@ footer .copyright {
   padding: 15px 10px;
   background-color: var(--primary-blue);
   color: var(--text-light);
-  min-height: 80px; /* Đảm bảo chiều cao nhất quán */
+  min-height: 80px;
+  /* Đảm bảo chiều cao nhất quán */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -396,7 +463,7 @@ footer .copyright {
   font-size: 0.9rem;
   line-height: 1.2;
   text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .experience-tag span {
@@ -405,7 +472,8 @@ footer .copyright {
 
 /* --- Swiper customizations --- */
 .swiper-container {
-  padding-bottom: 50px; /* Để pagination hiển thị rõ */
+  padding-bottom: 50px;
+  /* Để pagination hiển thị rõ */
 }
 
 .swiper-pagination-bullet {
@@ -424,21 +492,26 @@ footer .copyright {
     flex-direction: column;
     padding: 15px 20px;
   }
+
   header nav ul {
     flex-direction: column;
     gap: 10px;
     margin-top: 15px;
     align-items: center;
   }
+
   .hero-section h1 {
     font-size: 2.5rem;
   }
+
   .hero-section h2 {
     font-size: 1.5rem;
   }
+
   .about-section .about-content {
     flex-direction: column;
   }
+
   .about-section .about-image {
     max-width: 100%;
   }
@@ -448,19 +521,27 @@ footer .copyright {
   .hero-section h1 {
     font-size: 2rem;
   }
+
   .hero-section h2 {
     font-size: 1.2rem;
   }
+
   .cta-button {
     padding: 10px 20px;
     font-size: 0.9rem;
   }
+
   .section-title {
     font-size: 1.8rem;
   }
+
   .teacher-info h3 {
     font-size: 1rem;
   }
 }
 
-*, *::before, *::after { box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
