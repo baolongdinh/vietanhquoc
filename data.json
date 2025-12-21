@@ -54,8 +54,7 @@
     }
   },
   "hero": {
-    "title": "Cùng Việt Anh Quốc – Chắp Cánh Tương lai",
-    "subtitle": "YOUNG LEADERS",
+    "title": "Hãy Cùng Ngoại Ngữ Việt Anh Quốc Chắp Cánh Tương Lai",
     "description": "Chương trình Anh ngữ Thiếu niên giúp học viên bứt phá kỹ năng Anh ngữ học thuật, tự tin chinh phục các kỳ thi quốc tế và sẵn sàng cho các bậc học cao hơn.",
     "bannerImage": "images/banner.jpg",
     "cta": {
@@ -167,7 +166,7 @@
     },
     "missionVision": {
       "title": "Sứ mệnh – Tầm nhìn – Giá trị cốt lõi",
-      "mission": "Trung Tâm Ngoại Ngữ Việt Anh Quốc cam kết mang đến môi trường học tập tiếng Anh chất lượng cao, nơi học viên ở mọi độ tuổi được trang bị kiến thức, kỹ năng và sự tự tin để sử dụng tiếng Anh như một công cụ hội nhập toàn cầu. Chúng tôi không chỉ dạy ngôn ngữ, mà còn truyền cảm hứng học tập lâu dài, tư duy độc lập và tinh thần học hỏi không ngừng.",
+      "mission": "cam kết mang đến môi trường học tập tiếng Anh chất lượng cao, nơi học viên ở mọi độ tuổi được trang bị kiến thức, kỹ năng và sự tự tin để sử dụng tiếng Anh như một công cụ hội nhập toàn cầu. Chúng tôi không chỉ dạy ngôn ngữ, mà còn truyền cảm hứng học tập lâu dài, tư duy độc lập và tinh thần học hỏi không ngừng.",
       "vision": "Trở thành một trong những trung tâm đào tạo tiếng Anh hàng đầu tại khu vực phía Nam, được phụ huynh và học viên tin tưởng lựa chọn nhờ vào chất lượng giảng dạy, sự tận tâm của đội ngũ và hiệu quả đào tạo vượt trội. Trong 5 năm tới, Việt Anh Quốc hướng đến việc mở rộng hệ thống cơ sở, đa dạng hóa chương trình học và ứng dụng công nghệ hiện đại vào giảng dạy để nâng cao trải nghiệm học tập cho học viên.",
       "coreValues": [
         "Chất lượng là ưu tiên hàng đầu",
@@ -191,7 +190,7 @@
     },
     "philosophy": {
       "title": "Khẩu hiệu / Triết lý giáo dục",
-      "content": "Học tiếng Anh không chỉ là học ngôn ngữ, mà còn là mở rộng thế giới."
+      "content": "Học tiếng Anh không chỉ là học ngôn ngữ, mà còn là chìa khóa mở rộng ra thế giới."
     }
   },
   "aboutUsPage": {
@@ -369,9 +368,9 @@
       }
     },
     "address": "Lô E2-12, Đường C, Dự án phát triển Đông A, Đường Trần Thị Vững, Phường Dĩ An, Thành phố Hồ Chí Minh, Việt Nam",
-    "address_alt": "E2-12, ĐƯỜNG C, KDC HIM LAM PHÚ ĐÔNG, PHƯỜNG AN BÌNH, TP. DĨ AN, TỈNH BÌNH DƯƠNG",
-    "phone": "0913968338",
-    "email": "linhvietanhquoc@gmail.com",
+    "address_alt": "Lô E2-12, Đường C, Dự án phát triển Đông A, Đường Trần Thị Vững, Phường Dĩ An, Thành phố Hồ Chí Minh, Việt Nam",
+    "phone": "0837968338",
+    "email": "vietanhquoc69@gmail.com",
     "socials": {
       "facebook": "https://facebook.com/NNVietAnhQuoc/",
       "zalo": "https://zalo.me/NNVietAnhQuoc"
