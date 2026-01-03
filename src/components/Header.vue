@@ -21,10 +21,6 @@
     </nav>
   </header>
   
-  <!-- Nút CTA cố định -->
-  <div class="fixed-cta">
-    <button class="cta-button" @click="showModal = true">{{ header.cta.label }}</button>
-  </div>
   
   <!-- Modal liên hệ -->
   <div class="modal-overlay" v-if="showModal" @click="showModal = false">
@@ -102,15 +98,16 @@ nav ul {
 }
 
 nav li {
-  margin-left: 1.5rem;
+  margin-left: 1.2rem;
 }
 
 nav a {
   text-decoration: none;
   color: #ffffff;
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   transition: color 0.3s, transform 0.2s;
+  white-space: nowrap;
 }
 
 nav a:hover {
@@ -236,7 +233,22 @@ nav a:hover {
   background-color: #0068ff;
 }
 
-/* Responsive styles */
+/* Responsive styles for medium screens (small laptops/tablets) */
+@media (min-width: 769px) and (max-width: 1100px) {
+  header {
+    padding: 1.2rem 1.5rem;
+  }
+  
+  nav li {
+    margin-left: 0.7rem;
+  }
+  
+  nav a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive styles for mobile */
 @media (max-width: 768px) {
   header {
     padding: 0.8rem 1.5rem;

@@ -3,7 +3,7 @@
     <section class="hero">
       <div class="decor-shapes"></div>
       <div class="hero-inner reveal">
-        <h1>{{ gallery.title }}</h1>
+        <h1>Những hình ảnh của Việt Anh Quốc</h1>
         <p>Bộ sưu tập hình ảnh hoạt động và cơ sở vật chất</p>
       </div>
       <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C240,128 480,0 720,64 C960,128 1200,16 1440,64 L1440,120 L0,120 Z" fill="#ffffff"/></svg>

@@ -4,7 +4,7 @@
     <section class="courses-hero">
       <div class="decor-shapes"></div>
       <div class="hero-content reveal">
-        <h1>Khóa học tiếng Anh</h1>
+        <h1>Khóa học của Việt Anh Quốc </h1>
         <p class="breadcrumb">Chương trình đào tạo chuẩn quốc tế phù hợp với mọi lứa tuổi và nhu cầu</p>
       </div>
       <div class="scroll-indicator">↓</div>
@@ -235,7 +235,7 @@ onMounted(async () => {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  max-width: 900px;
+  max-width: 1200px;
 }
 
 .hero-content h1 {

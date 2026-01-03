@@ -3,7 +3,7 @@
     <section class="hero">
       <div class="decor-shapes"></div>
       <div class="hero-inner reveal">
-        <h1>Liên hệ</h1>
+        <h1>Liên hệ Trung Tâm Anh Ngữ Việt Anh Quốc</h1>
         <p class="subtitle">Thông tin liên hệ và vị trí bản đồ</p>
       </div>
       <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C240,128 480,0 720,64 C960,128 1200,16 1440,64 L1440,120 L0,120 Z" fill="#ffffff"/></svg>
@@ -19,21 +19,21 @@
             <div class="icon-circle"><span class="i">☎</span></div>
             <div>
               <h3>Hotline</h3>
-              <p>0913968338</p>
+              <p>0837968338</p>
             </div>
           </div>
           <div class="info-box">
             <div class="icon-circle"><span class="i">✉</span></div>
             <div>
               <h3>Email</h3>
-              <p>linhvietanhquoc@gmail.com</p>
+              <p>vietanhquoc69@gmail.com</p>
             </div>
           </div>
           <div class="info-box">
             <div class="icon-circle"><span class="i">📍</span></div>
             <div>
               <h3>Địa chỉ</h3>
-              <p>E2-12, ĐƯỜNG C, KDC HIM LAM PHÚ ĐÔNG, PHƯỜNG AN BÌNH, TP. DĨ AN, TỈNH BÌNH DƯƠNG</p>
+              <p>Lô E2-12, Đường C, Dự án phát triển Đông A, Đường Trần Thị Vững, Phường Dĩ An, Thành phố Hồ Chí Minh</p>
             </div>
           </div>
         </div>

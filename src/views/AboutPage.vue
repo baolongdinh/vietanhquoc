@@ -3,7 +3,7 @@
     <section class="hero">
       <div class="decor-shapes"></div>
       <div class="hero-inner fade-up">
-        <h1>Giới thiệu</h1>
+        <h1>Giới thiệu về Việt Anh Quốc</h1>
         <p>Hệ thống giáo dục chất lượng, lấy học viên làm trung tâm.</p>
         <div class="badges">
           <span v-for="(v, i) in aboutPage.missionVision.coreValues" :key="i" :class="['badge', accent(i)]">{{ v }}</span>
@@ -16,7 +16,6 @@
       <h2 class="section-title">{{ aboutPage.introduction.title }}</h2>
       <ul class="timeline">
         <li v-for="(paragraph, index) in aboutPage.introduction.content" :key="index" class="timeline-item fade-up">
-          <span class="dot"></span>
           <div class="timeline-card">
             <p>{{ paragraph }}</p>
           </div>
@@ -29,14 +28,17 @@
         <h2 class="section-title">{{ aboutPage.missionVision.title }}</h2>
         <div class="mv-grid">
           <div class="mv-card fade-up">
+            <div class="card-brand">Trung Tâm Ngoại Ngữ<br>Việt Anh Quốc</div>
             <h3>Sứ mệnh</h3>
             <p>{{ aboutPage.missionVision.mission }}</p>
           </div>
           <div class="mv-card fade-up">
+            <div class="card-brand">Trung Tâm Ngoại Ngữ<br>Việt Anh Quốc</div>
             <h3>Tầm nhìn</h3>
             <p>{{ aboutPage.missionVision.vision }}</p>
           </div>
           <div class="mv-card fade-up">
+            <div class="card-brand">Trung Tâm Ngoại Ngữ<br>Việt Anh Quốc</div>
             <h3>Giá trị cốt lõi</h3>
             <ul class="core-values-list">
               <li v-for="(v, i) in aboutPage.missionVision.coreValues" :key="i">{{ v }}</li>
@@ -181,7 +183,7 @@ const accent = (i) => ['red', 'yellow', 'green'][i % 3]
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  max-width: 900px;
+  max-width: 1200px;
 }
 
 .hero-inner h1 {
@@ -219,7 +221,7 @@ const accent = (i) => ['red', 'yellow', 'green'][i % 3]
 .badges {
   margin-top: 16px;
   display: flex;
-  gap: 8px;
+  gap: 6px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -227,8 +229,8 @@ const accent = (i) => ['red', 'yellow', 'green'][i % 3]
 .badge {
   display: inline-block;
   border-radius: 999px;
-  padding: 8px 12px;
-  font-size: 0.9rem;
+  padding: 6px 12px;
+  font-size: 0.85rem;
   background: #fff;
   border: 1px solid var(--blue-100);
   box-shadow: 0 6px 12px rgba(2, 132, 199, 0.08);
@@ -376,6 +378,22 @@ const accent = (i) => ['red', 'yellow', 'green'][i % 3]
 .mv-card:nth-child(2) { border-top-color: var(--accent-yellow); }
 .mv-card:nth-child(3) { border-top-color: var(--accent-red); }
 .mv-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0, 61, 130, 0.15); }
+
+.mv-card h3 {
+  color: var(--accent-yellow);
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.card-brand {
+  font-family: var(--font-serif);
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: var(--blue-900);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
 
 .mv-icon {
   height: 48px;
