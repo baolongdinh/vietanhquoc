@@ -334,7 +334,7 @@ onMounted(async () => {
   }
   
   .hero-content h1 {
-    font-size: 2.6rem; /* Tăng lên 2.6rem để khớp với About page */
+    font-size: 2.2rem; /* Updated from 2.6rem for consistency */
   }
   
   .breadcrumb {

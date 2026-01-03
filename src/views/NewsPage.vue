@@ -117,4 +117,14 @@ onMounted(async () => {
 .news-link:hover {
   background-color: #0056b3;
 }
+
+@media (max-width: 768px) {
+  .hero-inner h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-inner p {
+    font-size: 0.95rem;
+  }
+}
 </style>

@@ -57,4 +57,14 @@ onMounted(async () => {
 
 .about-us-container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; line-height: 1.8; }
 .about-us-paragraph { margin-bottom: 20px; }
+
+@media (max-width: 768px) {
+  .hero-inner h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-inner p {
+    font-size: 0.95rem;
+  }
+}
 </style>

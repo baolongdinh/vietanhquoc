@@ -474,6 +474,14 @@ onMounted(async () => {
 
 /* Responsive styles */
 @media (max-width: 768px) {
+  .hero-inner h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-inner p {
+    font-size: 0.95rem;
+  }
+  
   .activities-page {
     padding: 1.5rem;
   }

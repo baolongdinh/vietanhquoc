@@ -140,4 +140,14 @@ onMounted(async () => {
 
 @media (max-width: 992px) { .gallery-container { column-count: 2; } }
 @media (max-width: 600px) { .gallery-container { column-count: 1; } }
+
+@media (max-width: 768px) {
+  .hero-inner h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-inner p {
+    font-size: 0.95rem;
+  }
+}
 </style>

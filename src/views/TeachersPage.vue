@@ -195,6 +195,14 @@ onMounted(async () => {
 }
 
 @media (max-width: 768px) {
+  .page-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+  }
+  
   .teacher-stats {
     flex-direction: column;
     align-items: center;

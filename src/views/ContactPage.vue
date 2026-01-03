@@ -93,6 +93,14 @@ input:focus, textarea:focus { border-color: var(--blue-900); box-shadow: 0 0 0 4
 
 @media (max-width: 768px) {
   .grid { grid-template-columns: 1fr; }
+  
+  .hero-inner h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero .subtitle {
+    font-size: 0.95rem;
+  }
 }
 
 .submit-btn { background: linear-gradient(90deg, var(--blue-900), var(--blue-500)); color: #fff; }
