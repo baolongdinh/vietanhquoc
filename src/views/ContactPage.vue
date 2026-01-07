@@ -3,7 +3,7 @@
     <section class="hero">
       <div class="decor-shapes"></div>
       <div class="hero-inner reveal">
-        <h1>Liên hệ Trung Tâm Anh Ngữ Việt Anh Quốc</h1>
+        <h1>Liên hệ Trung Tâm Ngoại Ngữ Việt Anh Quốc</h1>
         <p class="subtitle">Thông tin liên hệ và vị trí bản đồ</p>
       </div>
       <svg class="wave" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0,64 C240,128 480,0 720,64 C960,128 1200,16 1440,64 L1440,120 L0,120 Z" fill="#ffffff"/></svg>
@@ -19,21 +19,21 @@
             <div class="icon-circle"><span class="i">☎</span></div>
             <div>
               <h3>Hotline</h3>
-              <p>0837968338</p>
+              <p>{{ contactData.phone }}</p>
             </div>
           </div>
           <div class="info-box">
             <div class="icon-circle"><span class="i">✉</span></div>
             <div>
               <h3>Email</h3>
-              <p>vietanhquoc69@gmail.com</p>
+              <p>{{ contactData.email }}</p>
             </div>
           </div>
           <div class="info-box">
             <div class="icon-circle"><span class="i">📍</span></div>
             <div>
               <h3>Địa chỉ</h3>
-              <p>Lô E2-12, Đường C, Dự án phát triển Đông A, Đường Trần Thị Vững, Phường Dĩ An, Thành phố Hồ Chí Minh</p>
+              <p>{{ contactData.address }}</p>
             </div>
           </div>
         </div>
@@ -51,6 +51,27 @@
 </template>
 
 <script setup>
+import { ref, onMounted } from 'vue';
+
+const contactData = ref({
+  phone: '',
+  email: '',
+  address: ''
+});
+
+onMounted(async () => {
+  try {
+    const response = await fetch('/data.json');
+    const data = await response.json();
+    contactData.value = {
+      phone: data.footer.phone,
+      email: data.footer.email,
+      address: data.footer.address
+    };
+  } catch (error) {
+    console.error('Error loading contact data:', error);
+  }
+});
 </script>
 
 <style scoped>

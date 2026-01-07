@@ -3,7 +3,6 @@
     <div class="overlay"></div>
     <div class="hero-content">
       <h1>{{ hero.title }}</h1>
-      <p>{{ hero.description }}</p>
     </div>
   </section>
 </template>
